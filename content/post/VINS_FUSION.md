@@ -71,6 +71,7 @@ Refer this error: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion/issues/10
 
 
 # References
+
 - [Vins-Fusion安装记录](https://zhuanlan.zhihu.com/p/432167383)
 - [彻底搞懂视觉-惯性SLAM：vins-fusion原理精讲与源码剖析-视觉传感器部分](https://www.bilibili.com/video/BV1YY41147k2)
 - [一起快速上手 VINS-Fusion](https://zhuanlan.zhihu.com/p/62988961)
