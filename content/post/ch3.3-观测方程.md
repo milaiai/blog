@@ -11,8 +11,6 @@ archives = ["2019/03"]
 
 +++
 
-
-
 # 観測方程式
 
 ![landmark_obs](https://raw.githubusercontent.com/yubaoliu/assets/image/landmark_obs.jpg)
