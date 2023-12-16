@@ -20,7 +20,7 @@ disqusShortname = "milaiai"
 
 publishDir = "public"
 
-post_asset_folder = false
+post_asset_folder = true
 
 [params]
 # Base color of the website.

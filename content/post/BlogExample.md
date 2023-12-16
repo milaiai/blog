@@ -28,4 +28,4 @@ archives: ["2023/11"]
 
 - f
 
-![hugo_github_workflow.png](./hugo_github_workflow.png)
+![hugo_github_workflow.png](hugo_github_workflow.png)
