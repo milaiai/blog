@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on MILAI AI</title>
+    <link>http://localhost:1313/tags/tools/</link>
+    <description>Recent content in Tools on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NFS共享服务配置</title>
+      <link>http://localhost:1313/post/nfs/</link>
+      <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/nfs/</guid>
+      <description>服务器 安装 sudo apt update sudo apt install nfs-kernel-server 配置文件 /etc/exports
+/srv/nfs4 192.168.33.0/24(rw,sync,no_subtree_check,crossmnt,fsid=0) /srv/nfs4/backups 192.168.33.0/24(ro,sync,no_subtree_check) 192.168.33.3(rw,sync,no_subtree_check) /srv/nfs4/www 192.168.33.110(rw,sync,no_subtree_check) /mnt/nfs_share subnet(rw,sync,no_subtree_check) /var/nfs/general client_ip(rw,sync,no_subtree_check) /home client_ip(rw,sync,no_root_squash,no_subtree_check)  fsid=0定义了 NFS 根目录 crossmnt选项是必要的，用来分享被导出目录的子目录 ro 该主机对该共享目录有只读权限 rw 该主机对该共享目录有读写权限, The client is granted both read and write permission to the volume. root_squash 客户机用root用户访问该共享文件夹时，将root用户映射成匿名用户 no_root_squash 客户机用root访问该共享文件夹时，不映射root用户, As mentioned earlier, NFS will translate any request from the remote root user to a non-privileged user. This is an intended security feature to prevent unwanted access to the host system.</description>
+    </item>
+    
+    <item>
+      <title>Github使用技巧</title>
+      <link>http://localhost:1313/post/git/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/git/</guid>
+      <description>使用Github的方法  利用镜像下载 通过代理网站下载 Gitee中转fork仓库下载 修改 HOSTS 文件进行加速 科学上网 (略)  加速网站  https://gitclone.com/ ghproxy GitHub 文件加速 https://gh.api.99988866.xyz http://toolwa.com/github/ https://github.zhlh6.cn https://fhefh2015.github.io/Fast-GitHub/ 浏览器插件 https://mirror.ghproxy.com/ https://www.github.do/ https://hub.0z.gs/ https://ghgo.feizhuqwq.workers.dev/ https://git.yumenaka.net/  通过修改 HOSTS 文件进行加速 第一步：获取 github 的 global.ssl.fastly 地址 访问：http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo 获取cdn和ip域名：
+得到：199.232.69.194 https://github.global.ssl.fastly.net
+第二步：获取github.com地址
+访问：https://github.com.ipaddress.com/#ipinfo 获取cdn和ip：
+得到：140.82.114.4 http://github.com
+查询以下三个链接的DNS解析地址
+ github.com assets-cdn.github.com github.global.ssl.fastly.net  修改Host文件：
+ Windows： C:\Windows\System32\drivers\etc\hosts Linux: /etc/hosts  其它仓库  https://gitee.com/  GitHub raw 加速 GitHub raw 域名并非 github.com 而是 raw.</description>
+    </item>
+    
+  </channel>
+</rss>

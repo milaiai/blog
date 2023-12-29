@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2023/12 on MILAI AI</title>
+    <link>http://localhost:1313/archives/2023/12/</link>
+    <description>Recent content in 2023/12 on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="http://localhost:1313/archives/2023/12/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Socket</title>
+      <link>http://localhost:1313/post/socket_android/</link>
+      <pubDate>Sat, 16 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/socket_android/</guid>
+      <description>A Simple TCP client of NIST time server   Demo: AndroidTcpDemo-GetNISTTime
+  Add Internet Permission to AndroidManifest.xml
+&amp;lt;uses-permission android:name=&amp;#34;android.permission.INTERNET&amp;#34; /&amp;gt;   Main Activity
+// This is a simple Client app example to get NIST time package com.yubao.androidtcpdemo; import androidx.appcompat.app.AppCompatActivity; import android.os.Bundle; import android.view.View; import android.widget.TextView; import com.yubao.androidtcpdemo.databinding.ActivityMainBinding; import java.io.BufferedReader; import java.io.IOException; import java.io.InputStreamReader; import java.net.Socket; public class MainActivity extends AppCompatActivity { // Used to load the &amp;#39;androidtcpdemo&amp;#39; library on application startup.</description>
+    </item>
+    
+  </channel>
+</rss>

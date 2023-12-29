@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script><title>MILAI AI | NFS共享服务配置</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="MILAI AI | NFS共享服务配置" />
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="Git">
+<meta property="og:site_name" content="MILAI AI">
+<meta property="og:description" content="Git">
+<meta property="og:url" content="http://localhost:1313/post/nfs/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="http://localhost:1313/post/nfs/">
+
+<meta name="twitter:description" content="Git">
+<meta property="article:published_time" content="2022-04-05T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2022-04-05T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="http://localhost:1313/img/cover.jpg">
+<meta property="og:image:url" content="http://localhost:1313/img/cover.jpg">
+    
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="http://localhost:1313/"><span class="font-semibold text-2xl tracking-tight">MILAI AI</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/about/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/contact/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 dark:text-white">
+    
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <h1 class="mb-2 text-4xl font-bold">NFS共享服务配置</h1>
+        <aside id="meta">
+          <div>
+            <section>
+              <h4 id="date"><span class="icon-access_time mr-2"></span>2022/04/05
+              </h4>
+            </section>
+            
+            <div id="tags">
+              <span class="icon-local_offer mr-1"></span>
+              
+              <a href='http://localhost:1313/tags/tools'>Tools</a> |
+              
+            </div>
+            
+          </div>
+        </aside>
+        
+        <img class="py-4" src="http://localhost:1313/img/cover.jpg">
+        
+        
+        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5"><h1 id="服务器">服务器</h1>
+<h2 id="安装">安装</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt update
+sudo apt install nfs-kernel-server
+</code></pre></div><h2 id="配置文件">配置文件</h2>
+<p>/etc/exports</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/srv/nfs4         192.168.33.0/24<span style="color:#f92672">(</span>rw,sync,no_subtree_check,crossmnt,fsid<span style="color:#f92672">=</span>0<span style="color:#f92672">)</span>
+/srv/nfs4/backups 192.168.33.0/24<span style="color:#f92672">(</span>ro,sync,no_subtree_check<span style="color:#f92672">)</span> 192.168.33.3<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/srv/nfs4/www     192.168.33.110<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/mnt/nfs_share subnet<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/var/nfs/general    client_ip<span style="color:#f92672">(</span>rw,sync,no_subtree_check<span style="color:#f92672">)</span>
+/home               client_ip<span style="color:#f92672">(</span>rw,sync,no_root_squash,no_subtree_check<span style="color:#f92672">)</span>
+</code></pre></div><ul>
+<li>fsid=0定义了 NFS 根目录</li>
+<li>crossmnt选项是必要的，用来分享被导出目录的子目录</li>
+<li>ro                          该主机对该共享目录有只读权限</li>
+<li>rw                         该主机对该共享目录有读写权限, The client is granted both read and write permission to the volume.</li>
+<li>root_squash         客户机用root用户访问该共享文件夹时，将root用户映射成匿名用户</li>
+<li>no_root_squash   客户机用root访问该共享文件夹时，不映射root用户, As mentioned earlier, NFS will translate any request from the remote root user to a non-privileged user. This is an intended security feature to prevent unwanted access to the host system. However, using this option will disable this behavior.</li>
+<li>all_squash            客户机上的任何用户访问该共享目录时都映射成匿名用户</li>
+<li>anonuid                将客户机上的用户映射成指定的本地用户ID的用户</li>
+<li>anongid                将客户机上的用户映射成属于指定的本地用户组ID</li>
+<li>sync                      资料同步写入到内存与硬盘中, Forces NFS to write the changes to disk before replying. It offers a more stable and consistent experience. The reply will reflect the actual state of the remote volume. However, the file operations will be slower.</li>
+<li>async                    资料会先暂存于内存中，而非直接写入硬盘</li>
+<li>no_subtree_check: Prevents subtree checking. If not disabled, hosts will be forced to check the existence of the file in the exported tree for every single request from the client. It can lead to many problems, for example, a file is renamed while the client is using it. In most cases, disabling subtree checks is the way to go.</li>
+<li>insecure                允许从这台机器过来的非授权访问</li>
+</ul>
+<p>绑定其他挂载目录</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mount --bind /opt/backups /srv/nfs4/backups
+sudo mount --bind /var/www /srv/nfs4/www
+</code></pre></div><p>上面的绑定，重启之后便会失效，可以修改fstab文件实现永久绑定。</p>
+<p>永久挂载：  /etc/fstab</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/opt/backups /srv/nfs4/backups  none   bind   <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>
+/var/www     /srv/nfs4/www      none   bind   <span style="color:#ae81ff">0</span>   <span style="color:#ae81ff">0</span>
+</code></pre></div><p>使配置文件生效</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo exportfs -ra
+</code></pre></div><p>查看共享文件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> sudo exportfs -v
+</code></pre></div><p>exportfs用法</p>
+<p>-a ：全部mount或者unmount /etc/exports中的内容
+-r ：重新mount /etc/exports中分享出来的目录
+-u ：umount 目录
+-v ：将详细的信息输出到屏幕上</p>
+<h1 id="防火墙">防火墙</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ufw status
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ufw enable
+sudo ufw disable
+sudo ufw status
+</code></pre></div><p>允许某个IP或any访问nfs端口</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ufw allow nfs
+sudo ufw allow from 31.171.250.221 to any port nfs
+sudo ufw allow from any to any port nfs
+</code></pre></div><p>查看端口</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$rpcinfo -p
+program vers proto   port  service
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">4</span>   tcp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">3</span>   tcp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">2</span>   tcp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">4</span>   udp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">3</span>   udp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100000</span>    <span style="color:#ae81ff">2</span>   udp    <span style="color:#ae81ff">111</span>  portmapper
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">1</span>   udp  <span style="color:#ae81ff">39242</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">1</span>   tcp  <span style="color:#ae81ff">20048</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">2</span>   udp  <span style="color:#ae81ff">52780</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">2</span>   tcp  <span style="color:#ae81ff">20048</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">3</span>   udp  <span style="color:#ae81ff">53401</span>  mountd
+    <span style="color:#ae81ff">100005</span>    <span style="color:#ae81ff">3</span>   tcp  <span style="color:#ae81ff">20048</span>  mountd
+    <span style="color:#ae81ff">100003</span>    <span style="color:#ae81ff">3</span>   tcp   <span style="color:#ae81ff">2049</span>  nfs
+    <span style="color:#ae81ff">100003</span>    <span style="color:#ae81ff">4</span>   tcp   <span style="color:#ae81ff">2049</span>  nfs
+    <span style="color:#ae81ff">100227</span>    <span style="color:#ae81ff">3</span>   tcp   <span style="color:#ae81ff">2049</span>
+    <span style="color:#ae81ff">100003</span>    <span style="color:#ae81ff">3</span>   udp   <span style="color:#ae81ff">2049</span>  nfs
+    <span style="color:#ae81ff">100227</span>    <span style="color:#ae81ff">3</span>   udp   <span style="color:#ae81ff">2049</span>
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">1</span>   udp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">3</span>   udp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">4</span>   udp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">1</span>   tcp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">3</span>   tcp  <span style="color:#ae81ff">42315</span>  nlockmgr
+    <span style="color:#ae81ff">100021</span>    <span style="color:#ae81ff">4</span>   tcp  <span style="color:#ae81ff">42315</span>  nlockmgr
+</code></pre></div><p>确认nfs相关服务组件及端口占用如下:</p>
+<table>
+<thead>
+<tr>
+<th>服务名称</th>
+<th>端口名称</th>
+<th>协议名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nfs</td>
+<td>2049</td>
+<td>tcp/udp</td>
+<td>端口固定</td>
+</tr>
+<tr>
+<td>portmapper</td>
+<td>111</td>
+<td>tcp/udp</td>
+<td>端口固定</td>
+</tr>
+<tr>
+<td>mountd</td>
+<td>20048</td>
+<td>tcp/udp</td>
+<td>端口不固定，需人为修改固定</td>
+</tr>
+<tr>
+<td>nlockmgr</td>
+<td>42315</td>
+<td>tcp/udp</td>
+<td>端口不固定，需人为修改固定</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>更改mountd 服务端口为20048</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;mountd 20048/tcp&#34;</span> &gt;&gt; /etc/services
+echo <span style="color:#e6db74">&#34;mountd 20048/udp&#34;</span> &gt;&gt; /etc/services
+</code></pre></div><ul>
+<li>更改nlockmgr 服务端口为42315</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;fs.nfs.nlm_udpport=42315&#34;</span> &gt;&gt; /etc/sysctl.conf
+echo <span style="color:#e6db74">&#34;fs.nfs.nlm_tcpport=42315&#34;</span> &gt;&gt; /etc/sysctl.conf
+sysctl -p
+</code></pre></div><ul>
+<li>nfs服务端防火墙开放相关服务固定端口
+服务端防火墙开放2049 、111 、20048 、42315 端口，此时客户端可正常访问挂载</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ufw allow 2049/tcp
+ufw allow 2049/udp
+ufw allow 111/tcp
+ufw allow 111/udp
+ufw allow 20048/tcp
+ufw allow 20048/udp
+ufw allow 42315/tcp
+ufw allow 42315/udp
+</code></pre></div><h1 id="客户端">客户端</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt install nfs-common
+</code></pre></div><h2 id="挂载">挂载</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sudo mount host_ip:/var/nfs/general /nfs/general
+$ sudo mount host_ip:/home /nfs/home
+</code></pre></div><h2 id="卸载">卸载</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo umount /nfs/general
+</code></pre></div><h1 id="常用命令与技巧">常用命令与技巧</h1>
+<h2 id="versions">versions</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$sudo cat /proc/fs/nfsd/versions
+-2 +3 +4 +4.1 +4.2
+</code></pre></div><h2 id="文件访问权限">文件访问权限</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo chown -R nobody:nogroup /mnt/nfs_share/
+</code></pre></div><h2 id="重启服务">重启服务</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo systemctl restart nfs-kernel-server
+</code></pre></div><h2 id="查看挂载情况">查看挂载情况</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$df -h
+$showmount -e IP
+</code></pre></div><h2 id="查看大小">查看大小</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">du -sh /nfs/general
+</code></pre></div><h2 id="客户端nfs挂载协议与服务端不一致-可以用nfsvers来指定nfs的版本">客户端nfs挂载协议与服务端不一致, 可以用nfsvers来指定NFS的版本</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mount -t nfs -o nfsvers<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span> x.x.x.x:/share /mnt
+</code></pre></div><h2 id="nfs无法提供锁服务">nfs无法提供锁服务</h2>
+<ul>
+<li>使用远程锁：启动服务端rpc.statd服务，使用这个服务提供远程锁</li>
+<li>使用本地锁：客户端挂载指定-o nolock，查看此时客户端挂载参数使用本地锁（local_lock=all）</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mount -t nfs -o nolock x.x.x.x:/share /mnt
+</code></pre></div><h1 id="references">References</h1>
+<ul>
+<li><a href="https://medium.com/geekculture/installing-nfs-on-ubuntu-20-04-server-3993bf9ac1b6">Installing NFS on Ubuntu 20.04 server</a></li>
+<li><a href="https://www.howtoforge.com/how-to-install-nfs-client-and-server-on-ubuntu-2004/">How to Install NFS Client and Server on Ubuntu 20.04</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1626660">如何在 Ubuntu 18.04 上安装和配置 NFS 服务器</a></li>
+<li><a href="https://blog.csdn.net/lincy100/article/details/6417743">linux服务器 NFS + 防火墙配置</a></li>
+<li><a href="https://www.cnblogs.com/luxf0/p/15544783.html">nfs常见问题处理</a></li>
+</ul>
+</div>
+        
+        <aside id="meta">
+          
+        </aside>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <div class="grid grid-cols-2">
+          <div class="col-span-1">
+            
+            <a class="previous lg:text-2xl" href="http://localhost:1313/post/debug/">
+              <div
+                class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                <span class="icon-keyboard_arrow_left"></span> Debug
+              </div>
+            </a>
+            
+          </div>
+          
+          <a class="next lg:text-2xl" href="http://localhost:1313/post/vins_fusion/">
+            <div
+              class="transition-colors duration-300 col-span-1 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+              VINS FUSION <span class="icon-keyboard_arrow_right"></span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <div class="mb-3">
+          <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "milaiai" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="http://localhost:1313/" />
+    </form>
+</div>
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2019/03">2019/03 (18)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2020/08">2020/08 (1)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2021/01">2021/01 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2021/05">2021/05 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2021/12">2021/12 (3)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2022/03">2022/03 (3)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2022/04">2022/04 (2)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2023/12">2023/12 (1)</a>
+    
+    
+</div>
+        
+            
+            
+        
+            
+            
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/tags/algorithm'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                algorithm
+            </span></a>
+        <a href='/tags/android'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                android
+            </span></a>
+        <a href='/tags/cmake'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                cmake
+            </span></a>
+        <a href='/tags/dataset'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                dataset
+            </span></a>
+        <a href='/tags/debug'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                debug
+            </span></a>
+        <a href='/tags/deeplearning'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                deeplearning
+            </span></a>
+        <a href='/tags/docer'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                docer
+            </span></a>
+        <a href='/tags/eigen'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                eigen
+            </span></a>
+        <a href='/tags/linux'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                linux
+            </span></a>
+        <a href='/tags/machinelearning'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                machinelearning
+            </span></a>
+        <a href='/tags/network'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                network
+            </span></a>
+        <a href='/tags/nvidia'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                nvidia
+            </span></a>
+        <a href='/tags/opencv'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                opencv
+            </span></a>
+        <a href='/tags/orb_slam3'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                orb_slam3
+            </span></a>
+        <a href='/tags/paper'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                paper
+            </span></a>
+        <a href='/tags/python'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                python
+            </span></a>
+        <a href='/tags/reinforcementlearning'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                reinforcementlearning
+            </span></a>
+        <a href='/tags/robotics'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                robotics
+            </span></a>
+        <a href='/tags/ros'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                ros
+            </span></a>
+        <a href='/tags/socket'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                socket
+            </span></a>
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/post/socket_android/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Android Socket</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2023/12/16</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/vins_fusion/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">VINS FUSION</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/16</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/nfs/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">NFS共享服务配置</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/04/05</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/debug/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Debug</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/03/10</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/git/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Github使用技巧</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2022/03/10</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+    
+</div>
+    
+  </div>
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2023 <a href="http://localhost:1313/" class="duration-200 hover:opacity-50">MILAI AI</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+
+  
+    
+
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js' type='text/javascript'>    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'] ],
+                   displayMath: [ ['$$','$$']  ],
+                   processEscapes: true
+                  },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+    </script>
+
+</footer>
+</div>
+</body>
+
+</html>

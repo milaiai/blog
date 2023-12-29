@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on MILAI AI</title>
+    <link>http://localhost:1313/tags/network/</link>
+    <description>Recent content in Network on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Network</title>
+      <link>http://localhost:1313/post/network/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/network/</guid>
+      <description>DNS vim /etc/resolv.conf
+nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp  安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start  </description>
+    </item>
+    
+  </channel>
+</rss>

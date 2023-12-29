@@ -1,12 +1,12 @@
 ---
-author: "Qingbao"
+author: "Yubao"
 title: "Blog Example"
 image: "img/cover.jpg"
 draft: true
-date: 2023-11-28
+date: 2023-12-28
 description: "Blog Example"
 tags: ["test"]
-archives: ["2023/11"]
+archives: ["2023/12"]
 ---
 
 # Insert Image
