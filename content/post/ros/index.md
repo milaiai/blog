@@ -1,17 +1,18 @@
 +++
 author = "Yubao"
 title = "ROS Installation"
-date = "2019-03-10"
+date = "2023-12-10"
 description = "ROS Installation"
 image = "img/cover.jpg"
 tags = [
     "ROS",
 ]
-archives = ["2021/12"]
+archives = ["2023/12"]
 
 +++
 
-- [rosdep update 超时失败2021最新解决方法](https://blog.csdn.net/Kenny_GuanHua/article/details/116845781)
+# Installation
+- http://wiki.ros.org/ROS/Installation
 
 # rosdep update
 
@@ -37,3 +38,7 @@ Warning: running 'rosdep update' as root is not recommended.
           Add distro "foxy"
           ERROR: Service 'rdsslam' failed to build: The command '/bin/sh -c rosdep update' returned a non-zero code: 1
 ```
+
+# References
+
+- [rosdep update 超时失败2021最新解决方法](https://blog.csdn.net/Kenny_GuanHua/article/details/116845781)

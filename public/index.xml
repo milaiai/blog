@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MILAI AI</title>
-    <link>http://localhost:1313/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Terminal, VIM</title>
+      <link>//localhost:1313/post/terminal-editor/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/terminal-editor/</guid>
+      <description>oh my nvim and VIM  https://github.com/hardhackerlabs/oh-my-nvim  syntax vim.keymap.set({mode}, {lhs}, {rhs}, {opts}) File Explore Files   https://shapeshed.com/vim-netrw
+:! ls -lF :find path/to/file.txt :vs path/to/file.txt :sp path/to/file.txt :tabnew path/to/file.txt   netrw  https://github.com/prichrd/netrw.nvim  :Explore - opens netrw in the current window :Sexplore - opens netrw in a horizontal split :Vexplore - opens netrw in a vertical split let g:netrw_banner = 0 let g:netrw_liststyle = 3 let g:netrw_browse_split = 4 let g:netrw_altv = 1 let g:netrw_winsize = 25 &amp;#34; augroup ProjectDrawer &amp;#34; autocmd!</description>
+    </item>
+    
+    <item>
       <title>Android Socket</title>
-      <link>http://localhost:1313/post/socket_android/</link>
+      <link>//localhost:1313/post/socket_android/</link>
       <pubDate>Sat, 16 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/socket_android/</guid>
+      <guid>//localhost:1313/post/socket_android/</guid>
       <description>A Simple TCP client of NIST time server   Demo: AndroidTcpDemo-GetNISTTime
   Add Internet Permission to AndroidManifest.xml
 &amp;lt;uses-permission android:name=&amp;#34;android.permission.INTERNET&amp;#34; /&amp;gt;   Main Activity
@@ -24,11 +34,21 @@
     </item>
     
     <item>
+      <title>ROS Installation</title>
+      <link>//localhost:1313/post/ros/</link>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/ros/</guid>
+      <description>Installation  http://wiki.ros.org/ROS/Installation  rosdep update Error Message:
+Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You should run &amp;#39;sudo rosdep fix-permissions&amp;#39; and invoke &amp;#39;rosdep update&amp;#39; again without sudo. ERROR: error loading sources list: (&amp;#39;The read operation timed out&amp;#39;,) reading in sources list data from /etc/ros/rosdep/sources.list.d Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml Query rosdistro index https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml Skip end-of-life distro &amp;#34;ardent&amp;#34; Skip end-of-life distro &amp;#34;bouncy&amp;#34; Skip end-of-life distro &amp;#34;crystal&amp;#34; Skip end-of-life distro &amp;#34;dashing&amp;#34; Skip end-of-life distro &amp;#34;eloquent&amp;#34; Add distro &amp;#34;foxy&amp;#34; ERROR: Service &amp;#39;rdsslam&amp;#39; failed to build: The command &amp;#39;/bin/sh -c rosdep update&amp;#39; returned a non-zero code: 1 ``` # References - [rosdep update 超时失败2021最新解决方法](https://blog.</description>
+    </item>
+    
+    <item>
       <title>VINS FUSION</title>
-      <link>http://localhost:1313/post/vins_fusion/</link>
+      <link>//localhost:1313/post/vins_fusion/</link>
       <pubDate>Sat, 16 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vins_fusion/</guid>
+      <guid>//localhost:1313/post/vins_fusion/</guid>
       <description>Introduction VINS-Fusion 是继 VINS-Mono 和 VINS-Mobile（单目视觉惯导 SLAM 方案）后，香港科技大学沈劭劼老师开源的双目视觉惯导 SLAM 方案，VINS-Fusion 是一种基于优化的多传感器状态估计器，可实现自主应用（无人机，汽车和 AR / VR）的精确自定位。 VINS-Fusion 是 VINS-Mono 的扩展，支持多种视觉惯性传感器类型（单目摄像机+ IMU，双目摄像机+ IMU，甚至仅限双目摄像机）。开源项目组还展示了将 VINS 与 GPS 融合的模组示例。
 Build  Get project  git clone https://github.com/yubaoliu/VINS-Fusion -b dev  Ubuntu 16 ROS OpenCV 3.x  set(OpenCV_DIR &amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34;) or export OpenCV_DIR=&amp;#34;/home/yubao/Software/install/opencv_3.3.1/share/OpenCV&amp;#34;  compile  cd ROS_PROJECT_DIR catkin_make Problems 编译错误 修改这些变量，之前使用的是C语言版本的API，并没有包含相应的头文件，所以报措。理论上加入相应的C版本的头文件是可以通过的，但是这是API已经不再使用，建议直接改成新的。
  CV_LOAD_IMAGE_GRAYSCALE -&amp;gt; cv::IMREAD_GRAYSCALE CV_GRAY2RGB -&amp;gt; cv::COLOR_RGB2GRAY CV_FONT_HERSHEY_SIMPLEX -&amp;gt; cv::FONT_HERSHEY_SIMPLEX  运行错误 Segment fault.
@@ -37,29 +57,29 @@ Build  Get project  git clone https://github.com/yubaoliu/VINS-Fusion -b dev  Ub
     
     <item>
       <title>NFS共享服务配置</title>
-      <link>http://localhost:1313/post/nfs/</link>
+      <link>//localhost:1313/post/nfs/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/nfs/</guid>
+      <guid>//localhost:1313/post/nfs/</guid>
       <description>服务器 安装 sudo apt update sudo apt install nfs-kernel-server 配置文件 /etc/exports
 /srv/nfs4 192.168.33.0/24(rw,sync,no_subtree_check,crossmnt,fsid=0) /srv/nfs4/backups 192.168.33.0/24(ro,sync,no_subtree_check) 192.168.33.3(rw,sync,no_subtree_check) /srv/nfs4/www 192.168.33.110(rw,sync,no_subtree_check) /mnt/nfs_share subnet(rw,sync,no_subtree_check) /var/nfs/general client_ip(rw,sync,no_subtree_check) /home client_ip(rw,sync,no_root_squash,no_subtree_check)  fsid=0定义了 NFS 根目录 crossmnt选项是必要的，用来分享被导出目录的子目录 ro 该主机对该共享目录有只读权限 rw 该主机对该共享目录有读写权限, The client is granted both read and write permission to the volume. root_squash 客户机用root用户访问该共享文件夹时，将root用户映射成匿名用户 no_root_squash 客户机用root访问该共享文件夹时，不映射root用户, As mentioned earlier, NFS will translate any request from the remote root user to a non-privileged user. This is an intended security feature to prevent unwanted access to the host system.</description>
     </item>
     
     <item>
       <title>Debug</title>
-      <link>http://localhost:1313/post/debug/</link>
+      <link>//localhost:1313/post/debug/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/debug/</guid>
+      <guid>//localhost:1313/post/debug/</guid>
       <description>Rosrun set(CMAKE_BUILD_TYPE Debug) rosrun --prefix &amp;#39;gdb -ex run --args&amp;#39; [package_name] [node_name] </description>
     </item>
     
     <item>
       <title>Github使用技巧</title>
-      <link>http://localhost:1313/post/git/</link>
+      <link>//localhost:1313/post/git/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/git/</guid>
+      <guid>//localhost:1313/post/git/</guid>
       <description>使用Github的方法  利用镜像下载 通过代理网站下载 Gitee中转fork仓库下载 修改 HOSTS 文件进行加速 科学上网 (略)  加速网站  https://gitclone.com/ ghproxy GitHub 文件加速 https://gh.api.99988866.xyz http://toolwa.com/github/ https://github.zhlh6.cn https://fhefh2015.github.io/Fast-GitHub/ 浏览器插件 https://mirror.ghproxy.com/ https://www.github.do/ https://hub.0z.gs/ https://ghgo.feizhuqwq.workers.dev/ https://git.yumenaka.net/  通过修改 HOSTS 文件进行加速 第一步：获取 github 的 global.ssl.fastly 地址 访问：http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo 获取cdn和ip域名：
 得到：199.232.69.194 https://github.global.ssl.fastly.net
 第二步：获取github.com地址
@@ -72,19 +92,19 @@ Build  Get project  git clone https://github.com/yubaoliu/VINS-Fusion -b dev  Ub
     
     <item>
       <title>Linux使用技巧</title>
-      <link>http://localhost:1313/post/linux/</link>
+      <link>//localhost:1313/post/linux/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/linux/</guid>
+      <guid>//localhost:1313/post/linux/</guid>
       <description>查看各文件大小 du -h --max-depth=1 查看剩余空间 ~ df . -h Filesystem Size Used Avail Use% Mounted on /dev/nvme1n1p6 492G 457G 9.6G 98% / </description>
     </item>
     
     <item>
       <title>Eigen</title>
-      <link>http://localhost:1313/post/eigen/</link>
+      <link>//localhost:1313/post/eigen/</link>
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/eigen/</guid>
+      <guid>//localhost:1313/post/eigen/</guid>
       <description>1 In file included from /root/Pangolin/components/pango_opengl/include/pangolin/gl/gldraw.h:31:0, from /root/Pangolin/components/pango_opengl/src/gldraw.cpp:29: /root/Pangolin/components/pango_opengl/include/pangolin/gl/glformattraits.h:33:24: fatal error: Eigen/Core: No such file or directory compilation terminated. CMakeFiles/pango_opengl.dir/build.make:98: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o&amp;#39; failed make[2]: *** [CMakeFiles/pango_opengl.dir/components/pango_opengl/src/gldraw.cpp.o] Error 1 CMakeFiles/Makefile2:830: recipe for target &amp;#39;CMakeFiles/pango_opengl.dir/all&amp;#39; failed make[1]: *** [CMakeFiles/pango_opengl.dir/all] Error 2 Makefile:148: recipe for target &amp;#39;all&amp;#39; failed 出现这个问题首先要考虑是否安装了eigen库,可以进行以下命令检查：
 sudo updatedb locate eigen3 如果没装，安装：
 sudo apt-get install libeigen3-dev CMake:
@@ -93,29 +113,29 @@ set(Eigen3_DIR CMAKE_INSTALL_PREFIX/share/eigen3/cmake) find_package(Eigen3 3.3 
     
     <item>
       <title>OpenCV Usage</title>
-      <link>http://localhost:1313/post/opencv/</link>
+      <link>//localhost:1313/post/opencv/</link>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/opencv/</guid>
+      <guid>//localhost:1313/post/opencv/</guid>
       <description>CMake Usage cmake_minimum_required(VERSION 2.8) project( DisplayImage ) find_package( OpenCV REQUIRED ) include_directories( ${OpenCV_INCLUDE_DIRS} ) add_executable( DisplayImage DisplayImage.cpp ) target_link_libraries( DisplayImage ${OpenCV_LIBS} ) Basic variables:
  OpenCV_LIBS : The list of all imported targets for OpenCV modules. OpenCV_INCLUDE_DIRS : The OpenCV include directories. OpenCV_COMPUTE_CAPABILITIES : The version of compute capability. OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API. OpenCV_VERSION : The version of this OpenCV build: &amp;ldquo;3.3.1&amp;rdquo; OpenCV_VERSION_MAJOR : Major version part of OpenCV_VERSION: &amp;ldquo;3&amp;rdquo; OpenCV_VERSION_MINOR : Minor version part of OpenCV_VERSION: &amp;ldquo;3&amp;rdquo; OpenCV_VERSION_PATCH : Patch version part of OpenCV_VERSION: &amp;ldquo;1&amp;rdquo; OpenCV_VERSION_STATUS : Development status of this build: &amp;quot;&amp;rdquo;  Advanced variables:</description>
     </item>
     
     <item>
       <title>Papers With Source Code</title>
-      <link>http://localhost:1313/post/paperswithcode/</link>
+      <link>//localhost:1313/post/paperswithcode/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/paperswithcode/</guid>
+      <guid>//localhost:1313/post/paperswithcode/</guid>
       <description>Loop Closure  FAB-MAP: https://github.com/arrenglover/openfabmap  </description>
     </item>
     
     <item>
       <title>Dataset</title>
-      <link>http://localhost:1313/post/dataset/</link>
+      <link>//localhost:1313/post/dataset/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/dataset/</guid>
+      <guid>//localhost:1313/post/dataset/</guid>
       <description>网上找到的国内下载地址 Refer: https://blog.csdn.net/qq_36170626/article/details/94902166
  TUM  链接：https://pan.baidu.com/s/1nwXtGqH 密码：lsgr
  KITTI  链接：https://pan.baidu.com/s/1htFmXDE 密码：uu20
@@ -130,10 +150,10 @@ EuRoC EuRoC_download
     
     <item>
       <title>Docker Proxy Setting</title>
-      <link>http://localhost:1313/post/docker/</link>
+      <link>//localhost:1313/post/docker/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/docker/</guid>
+      <guid>//localhost:1313/post/docker/</guid>
       <description>daemon You may meet such error:
 ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout sudo vim /etc/docker/daemon.json
 { “registry-mirrors”:[“https://docker.mirrors.ustc.edu.cn”] } commands  systemctl daemon-reload systemctl restart docker remove all images and containers  docker rm $(docker ps -a -q) docker rmi $(docker images -q) Docker Proxy Sometimes we need to download the developing packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;.</description>
@@ -141,10 +161,10 @@ ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.doc
     
     <item>
       <title>Nvidia-cuda</title>
-      <link>http://localhost:1313/post/nvidia-cuda/</link>
+      <link>//localhost:1313/post/nvidia-cuda/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/nvidia-cuda/</guid>
+      <guid>//localhost:1313/post/nvidia-cuda/</guid>
       <description>查看显卡计算能力 Compute Capability GeForce and TITAN Products Geforce RTX 3060	8.6
 Check Nvidia version deviceQuery cd /usr/local/cuda-11.3/samples/1_Utilities/deviceQuery ./devicequery Copy to HOME folder to make if not maked before.
 ~./deviceQuery ./deviceQuery Starting... CUDA Device Query (Runtime API) version (CUDART static linking) Detected 1 CUDA Capable device(s) Device 0: &amp;#34;NVIDIA GeForce RTX 3060 Laptop GPU&amp;#34; CUDA Driver Version / Runtime Version 11.4 / 11.3 CUDA Capability Major/Minor version number: 8.6 Total amount of global memory: 5947 MBytes (6235422720 bytes) (030) Multiprocessors, (128) CUDA Cores/MP: 3840 CUDA Cores GPU Max Clock rate: 1702 MHz (1.</description>
@@ -152,19 +172,19 @@ Check Nvidia version deviceQuery cd /usr/local/cuda-11.3/samples/1_Utilities/dev
     
     <item>
       <title></title>
-      <link>http://localhost:1313/archives/</link>
+      <link>//localhost:1313/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/archives/</guid>
+      <guid>//localhost:1313/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Agent引擎的实现</title>
-      <link>http://localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <link>//localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>//localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
       <description>Angent的实现
 Overview 之前学习了状态迁移函数，并能绘制机器人。
 这节的目标是实现机器人的引擎，让机器人能动起来。
@@ -173,39 +193,39 @@ Overview 之前学习了状态迁移函数，并能绘制机器人。
     
     <item>
       <title>Cmake</title>
-      <link>http://localhost:1313/post/cmake/</link>
+      <link>//localhost:1313/post/cmake/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/cmake/</guid>
+      <guid>//localhost:1313/post/cmake/</guid>
       <description>Sophus RUN git clone https://github.com/yubaoliu/Sophus.git \  &amp;amp;&amp;amp; cd Sophus \  &amp;amp;&amp;amp; git checkout master \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j3 \  &amp;amp;&amp;amp; make install G2O RUN git clone https://github.com/yubaoliu/g2o.git \  &amp;amp;&amp;amp; cd g2o \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j 3 \  &amp;amp;&amp;amp; make install </description>
     </item>
     
     <item>
       <title>Ctags-VIM</title>
-      <link>http://localhost:1313/post/tags/</link>
+      <link>//localhost:1313/post/tags/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/tags/</guid>
+      <guid>//localhost:1313/post/tags/</guid>
       <description>Command	Function Ctrl + ]	Go to definition Ctrl + T	Jump back from the definition Ctrl + W Ctrl + ]	Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt;	List the tags that match &amp;lt;tag_name&amp;gt; :tn	Jump to the next matching tag :tp	Jump to the previous matching tag
 Shortcuts  Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag  Ctags  查看ctags支持的语言  ctags --list-languages  查看语言和扩展名的对应关系  ctags --list-maps  查看ctags可以识别和记录的语法元素  ctags --list-kinds ctags --list-kinds=c++  对当前目录下所有ctags支持的语言格式文件生成tags  ctags -R * ctags 默认并不会提取所有标识符的tag标签，以下命令可以生成更加详细的tag文件</description>
     </item>
     
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/post/network/</link>
+      <link>//localhost:1313/post/network/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/network/</guid>
+      <guid>//localhost:1313/post/network/</guid>
       <description>DNS vim /etc/resolv.conf
 nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp  安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start  </description>
     </item>
     
     <item>
       <title>ORB_SLAM3</title>
-      <link>http://localhost:1313/post/orb-slam/</link>
+      <link>//localhost:1313/post/orb-slam/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/orb-slam/</guid>
+      <guid>//localhost:1313/post/orb-slam/</guid>
       <description>Get ORB_SLAM3 git clone https://github.com/yubaoliu/ORB_SLAM3.git cd ORB_SLAM3 git checkout dev Deploy ORB_SLAM3   Build OpenCV OpenCV will be installed when you install the ROS.
   Build thirdparties
   chmod +x build.sh ./build.sh 使用Realsense运行ORB_SLAM3  Start realsense camera node  roslaunch realsense2_camera rs_rgbd.launch  Start ORB_SLAM3 node  roslaunch orb_slam3 realsense.launch </description>
@@ -213,31 +233,21 @@ nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy
     
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/post/python/</link>
+      <link>//localhost:1313/post/python/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/python/</guid>
+      <guid>//localhost:1313/post/python/</guid>
       <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html
 ~/.pip/pip.conf
 [global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com Set source list for pip install pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple/ // 国内源 pip install 包名-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com References  pip安装包报错Could not find a version that satisfies the requirement pymysql (from versions: none)  </description>
     </item>
     
     <item>
-      <title>ROS Installation</title>
-      <link>http://localhost:1313/post/ros-installation/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/ros-installation/</guid>
-      <description> rosdep update 超时失败2021最新解决方法  rosdep update Error Message:
-Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You should run &amp;#39;sudo rosdep fix-permissions&amp;#39; and invoke &amp;#39;rosdep update&amp;#39; again without sudo. ERROR: error loading sources list: (&amp;#39;The read operation timed out&amp;#39;,) reading in sources list data from /etc/ros/rosdep/sources.list.d Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml Hit https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml Query rosdistro index https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml Skip end-of-life distro &amp;#34;ardent&amp;#34; Skip end-of-life distro &amp;#34;bouncy&amp;#34; Skip end-of-life distro &amp;#34;crystal&amp;#34; Skip end-of-life distro &amp;#34;dashing&amp;#34; Skip end-of-life distro &amp;#34;eloquent&amp;#34; Add distro &amp;#34;foxy&amp;#34; ERROR: Service &amp;#39;rdsslam&amp;#39; failed to build: The command &amp;#39;/bin/sh -c rosdep update&amp;#39; returned a non-zero code: 1 ``` </description>
-    </item>
-    
-    <item>
       <title>VIM</title>
-      <link>http://localhost:1313/post/vim/</link>
+      <link>//localhost:1313/post/vim/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vim/</guid>
+      <guid>//localhost:1313/post/vim/</guid>
       <description>Debug  go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb?  Termdebug :packadd termdebug Markdown   HELLO
   VIM 之插件篇
   import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
@@ -245,10 +255,10 @@ Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You
     
     <item>
       <title>强化学习</title>
-      <link>http://localhost:1313/post/reinforcement_learning/</link>
+      <link>//localhost:1313/post/reinforcement_learning/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/reinforcement_learning/</guid>
+      <guid>//localhost:1313/post/reinforcement_learning/</guid>
       <description>Resources   https://deepreinforcementlearningbook.org/
   https://github.com/deep-reinforcement-learning-book
   Reinforcement Learning Book: https://www.dbooks.org/reinforcement-learning-0262039249/
@@ -257,10 +267,10 @@ Warning: running &amp;#39;rosdep update&amp;#39; as root is not recommended. You
     
     <item>
       <title>机器人位姿描述</title>
-      <link>http://localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</link>
+      <link>//localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</guid>
+      <guid>//localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</guid>
       <description>Objective  绘制世界坐标系 如何描述机器人的位姿 如何绘制世界坐标系 如何绘制机器人位姿  可参考：3.2.2 ロボットの姿勢と描く
 対向２輪ロボット(Differential wheeled robot) 机器人位姿   世界坐标系记为 $\Sigma_{world}$
   位姿 (状态)：位置和朝向 $x = (x, y, \theta)^T$
@@ -272,10 +282,10 @@ Source Code import matplotlib.pyplot as plt import matplotlib.patches as patches
     
     <item>
       <title>机器人开发环境介绍</title>
-      <link>http://localhost:1313/post/ch1-environment/</link>
+      <link>//localhost:1313/post/ch1-environment/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch1-environment/</guid>
+      <guid>//localhost:1313/post/ch1-environment/</guid>
       <description>机器人开发环境介绍 In this section, we will tintroduce:
  the usage case of robots the development environment for simulation (Python + conda)  概率机器人详解 概率机器人详解 Homepage
 课件: ryuichiueda/LNPR_SLIDES
@@ -289,10 +299,10 @@ Environment Deployment  (optional) Anyconda or other virtual Python environment 
     
     <item>
       <title>机器人概率基础</title>
-      <link>http://localhost:1313/post/ch2-probabilistics/</link>
+      <link>//localhost:1313/post/ch2-probabilistics/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch2-probabilistics/</guid>
+      <guid>//localhost:1313/post/ch2-probabilistics/</guid>
       <description>平均値 $$\mu = \frac{1}{N}\sum_{i=0}^{N-1} z_i$$
  $z_0, z_1, \dots, z_{N-1}$: センサ値 $N$: センサ値の個数  分散、標準偏差 $$\sigma^2 = \frac{1}{N-1}\sum_{i=0}^{N-1} (z_i - \mu)^2 \quad (N&amp;gt;1)$$
 (素朴な）確率分布 ここでやりたいこと: 度数分布から、 未来にどんなセンサ値が得られそうかを予想
@@ -305,38 +315,38 @@ $$ p(x | \mu, \sigma^2 ) $$</description>
     
     <item>
       <title>机器学习</title>
-      <link>http://localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <link>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
       <description>Resources  introduction_to_ml_with_python  </description>
     </item>
     
     <item>
       <title>深度学习</title>
-      <link>http://localhost:1313/post/deeplearning/</link>
+      <link>//localhost:1313/post/deeplearning/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/deeplearning/</guid>
+      <guid>//localhost:1313/post/deeplearning/</guid>
       <description>Environment Setup !pip install numpy scipy matplotlib ipython scikit-learn pandas pillow Introduction to Artificial Neural Network Activation Function Step function import numpy as np import matplotlib.pylab as plt def step_function(x): return np.array(x&amp;gt;0, dtype=np.int) x = np.arange(-5.0, 5.0, 0.1) y = step_function(x) plt.plot(x, y) plt.ylim(-0.1, 1.1) plt.show() Sigmoid Function import numpy as np import matplotlib.pylab as plt def sigmoid(x): return 1 / (1 + np.exp(-x)) # x = np.array([-1.0, 1.0, 2.0]) # print(y) x = np.</description>
     </item>
     
     <item>
       <title>用动画来绘制Robot仿真环境</title>
-      <link>http://localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</link>
+      <link>//localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</guid>
+      <guid>//localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</guid>
       <description>Objective  用动画来绘制Robot仿真环境  重要函数 matplotlib.animation.FuncAnimation class matplotlib.animation.FuncAnimation(fig, func, frames=None, init_func=None, fargs=None, save_count=None, *, cache_frame_data=True, **kwargs)[source]  intervalnumber, optional Delay between frames in milliseconds. Defaults to 200. frames iterable, int, generator function, or None, optional fargstuple or None, optional Additional arguments to pass to each call to func.  Refer https://matplotlib.org/api/_as_gen/matplotlib.animation.FuncAnimation.html for detail.
 matplotlib.pyplot.plo  https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot  matplotlib.pyplot.plot(*args, scalex=True, scaley=True, data=None, **kwargs) 注意其返回值为： lines A list of Line2D objects representing the plotted data.</description>
     </item>
     
     <item>
       <title>算法-动态规划</title>
-      <link>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+      <link>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+      <guid>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
       <description>在线测试  https://www.luogu.com.cn/ https://onlinejudge.org/ https://leetcode-cn.com/  动态规划 斐波那契数 斐波那契数，通常用 F(n) 表示，形成的序列称为 斐波那契数列 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：
 F(0) = 0，F(1) = 1 F(n) = F(n - 1) + F(n - 2)，其中 n &amp;gt; 1 给你 n ，请计算 F(n) 。
 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/fibonacci-number
@@ -347,10 +357,10 @@ int fib(int n) { int F[n+1]; F[0] = 0; if (n &amp;lt;= 0) return F[0]; F[1] = 1;
     
     <item>
       <title>算法-最短路径</title>
-      <link>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link>
+      <link>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid>
+      <guid>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid>
       <description>最短路径 Dijkstra 算法 基于贪心的单源最短路算法，其要求图中的边全部非负。
   Dijkstra’s shortest path algorithm
   戴克斯特拉算法-wiki
@@ -361,10 +371,10 @@ int fib(int n) { int F[n+1]; F[0] = 0; if (n &amp;lt;= 0) return F[0]; F[1] = 1;
     
     <item>
       <title>绘制Landmark</title>
-      <link>http://localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</link>
+      <link>//localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</guid>
+      <guid>//localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</guid>
       <description>绘制地图点
 Overview 概率机器人详解 （Python） 3.3.1　点ランドマークの設置
  本文将介绍：
@@ -374,20 +384,20 @@ class Landmark: def __init__(self, x, y): self.pos = np.array([x, y]).T self.id 
     
     <item>
       <title>观测方程</title>
-      <link>http://localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</link>
+      <link>//localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</guid>
+      <guid>//localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</guid>
       <description>観測方程式 $$ \begin{pmatrix} \ell_j \\ \varphi_j \end{pmatrix} = \begin{pmatrix} \sqrt{(m_{j,x} - x)^2 + (m_{j,y} - y)^2} \\ \text{atan2}(m_{j,y} - y, m_{j,x} - x) - \theta \end{pmatrix} $$
  $z_j = h_j (x)$ $z_j = h(x, m_j)$（ランドマークの位置を変数とする場合） 関数$h_j$: 観測関数  参考代码 class IdealCamera: def __init__(self, env_map, \ distance_range=(0.5, 6.0), direction_range=(-math.pi/3, math.pi/3)): self.map = env_map self.lastdata = [] self.distance_range = distance_range self.direction_range = direction_range def visible(self, polarpos): if polarpos is None: return False return self.</description>
     </item>
     
     <item>
       <title>运动方程</title>
-      <link>http://localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</link>
+      <link>//localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</guid>
+      <guid>//localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</guid>
       <description>内容  运动方程， 控制命令， 让机器人动起来。  理论 (Refered From: https://github.com/ryuichiueda/LNPR_SLIDES/blob/master/old_version/figs/robot_motion1.png)
  (Refered From: https://github.com/ryuichiueda/LNPR_SLIDES/raw/master/old_version/figs/robot_motion2.png)
 相关变量  速度: $nv [m/s]$ 角速度： $\omega [rad/s]$ 制御指令：从 $t-1$ 时刻到$t$时刻的运动指令 $u_t = (\nu_t, \omega_t)$   制御指令（せいぎょしれい）は離散時刻ごとにしか変えられないことにします。時刻$t-1$からt までの制御指令を$u_t = (\nu_t, \omega_t)$ と表記します。
@@ -402,19 +412,19 @@ $$ \theta_t = \theta_{t-1} + \int_{0}^{\delta t} \omega_t dt = \theta_{t-1} + \o
     
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>Robotics, SLAM, Self-drving, and AR</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>//localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>//localhost:1313/contact/</guid>
       <description> To contact us, please fill out the form below.
        </description>
     </item>

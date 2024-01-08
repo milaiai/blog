@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on MILAI AI</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>//localhost:1313/tags/python/</link>
     <description>Recent content in Python on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/post/python/</link>
+      <link>//localhost:1313/post/python/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/python/</guid>
+      <guid>//localhost:1313/post/python/</guid>
       <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html
 ~/.pip/pip.conf
 [global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com Set source list for pip install pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple/ // 国内源 pip install 包名-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com References  pip安装包报错Could not find a version that satisfies the requirement pymysql (from versions: none)  </description>

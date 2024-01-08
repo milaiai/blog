@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paper on MILAI AI</title>
-    <link>http://localhost:1313/tags/paper/</link>
+    <link>//localhost:1313/tags/paper/</link>
     <description>Recent content in Paper on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Papers With Source Code</title>
-      <link>http://localhost:1313/post/paperswithcode/</link>
+      <link>//localhost:1313/post/paperswithcode/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/paperswithcode/</guid>
+      <guid>//localhost:1313/post/paperswithcode/</guid>
       <description>Loop Closure  FAB-MAP: https://github.com/arrenglover/openfabmap  </description>
     </item>
     

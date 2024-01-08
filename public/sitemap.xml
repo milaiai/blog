@@ -3,347 +3,371 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/tags/android/</loc>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/powershell/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/post/terminal-editor/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/tmux/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/zsh/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/android/</loc>
     <lastmod>2023-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/socket_android/</loc>
+    <loc>//localhost:1313/post/socket_android/</loc>
     <lastmod>2023-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>//localhost:1313/tags/socket/</loc>
     <lastmod>2023-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/socket/</loc>
-    <lastmod>2023-12-16T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/ros/</loc>
+    <lastmod>2023-12-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-12-16T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/post/ros/</loc>
+    <lastmod>2023-12-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/vins_fusion/</loc>
+    <loc>//localhost:1313/post/vins_fusion/</loc>
     <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/vio/</loc>
+    <loc>//localhost:1313/tags/vio/</loc>
     <lastmod>2022-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/nfs/</loc>
+    <loc>//localhost:1313/post/nfs/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/tools/</loc>
+    <loc>//localhost:1313/tags/tools/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/debug/</loc>
+    <loc>//localhost:1313/tags/debug/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/debug/</loc>
+    <loc>//localhost:1313/post/debug/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/git/</loc>
+    <loc>//localhost:1313/post/git/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>//localhost:1313/tags/linux/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/linux/</loc>
+    <loc>//localhost:1313/post/linux/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/eigen/</loc>
+    <loc>//localhost:1313/tags/eigen/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/eigen/</loc>
+    <loc>//localhost:1313/post/eigen/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/opencv/</loc>
+    <loc>//localhost:1313/tags/opencv/</loc>
     <lastmod>2021-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/opencv/</loc>
+    <loc>//localhost:1313/post/opencv/</loc>
     <lastmod>2021-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/paper/</loc>
+    <loc>//localhost:1313/tags/paper/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/paperswithcode/</loc>
+    <loc>//localhost:1313/post/paperswithcode/</loc>
     <lastmod>2021-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/dataset/</loc>
+    <loc>//localhost:1313/tags/dataset/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/dataset/</loc>
+    <loc>//localhost:1313/post/dataset/</loc>
     <lastmod>2021-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/docer/</loc>
+    <loc>//localhost:1313/tags/docer/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/docker/</loc>
+    <loc>//localhost:1313/post/docker/</loc>
     <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/nvidia/</loc>
+    <loc>//localhost:1313/tags/nvidia/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/nvidia-cuda/</loc>
+    <loc>//localhost:1313/post/nvidia-cuda/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>//localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+    <loc>//localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/algorithm/</loc>
+    <loc>//localhost:1313/tags/algorithm/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/cmake/</loc>
+    <loc>//localhost:1313/tags/cmake/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/cmake/</loc>
+    <loc>//localhost:1313/post/cmake/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/tags/</loc>
+    <loc>//localhost:1313/post/tags/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/deeplearning/</loc>
+    <loc>//localhost:1313/tags/deeplearning/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/machinelearning/</loc>
+    <loc>//localhost:1313/tags/machinelearning/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/network/</loc>
+    <loc>//localhost:1313/tags/network/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/network/</loc>
+    <loc>//localhost:1313/post/network/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/orb_slam3/</loc>
+    <loc>//localhost:1313/tags/orb_slam3/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/orb-slam/</loc>
+    <loc>//localhost:1313/post/orb-slam/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>//localhost:1313/tags/python/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/python/</loc>
+    <loc>//localhost:1313/post/python/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/reinforcementlearning/</loc>
+    <loc>//localhost:1313/tags/reinforcementlearning/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/robotics/</loc>
+    <loc>//localhost:1313/tags/robotics/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/ros/</loc>
+    <loc>//localhost:1313/tags/vim/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ros-installation/</loc>
+    <loc>//localhost:1313/post/vim/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/vim/</loc>
+    <loc>//localhost:1313/post/reinforcement_learning/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/vim/</loc>
+    <loc>//localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/reinforcement_learning/</loc>
+    <loc>//localhost:1313/post/ch1-environment/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</loc>
+    <loc>//localhost:1313/post/ch2-probabilistics/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch1-environment/</loc>
+    <loc>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch2-probabilistics/</loc>
+    <loc>//localhost:1313/post/deeplearning/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>//localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/deeplearning/</loc>
+    <loc>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</loc>
+    <loc>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <loc>//localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</loc>
+    <loc>//localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</loc>
+    <loc>//localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2019/03/</loc>
+    <loc>//localhost:1313/archives/2019/03/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2020/08/</loc>
+    <loc>//localhost:1313/archives/2020/08/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2021/01/</loc>
+    <loc>//localhost:1313/archives/2021/01/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2021/05/</loc>
+    <loc>//localhost:1313/archives/2021/05/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2021/12/</loc>
+    <loc>//localhost:1313/archives/2021/12/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2022/03/</loc>
+    <loc>//localhost:1313/archives/2022/03/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2022/04/</loc>
+    <loc>//localhost:1313/archives/2022/04/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/2023/12/</loc>
+    <loc>//localhost:1313/archives/2023/12/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>//localhost:1313/archives/2024/01/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//localhost:1313/archives/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>//localhost:1313/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/contact/</loc>
   </url>
   
 </urlset>

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2019/03 on MILAI AI</title>
-    <link>http://localhost:1313/archives/2019/03/</link>
+    <link>//localhost:1313/archives/2019/03/</link>
     <description>Recent content in 2019/03 on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://localhost:1313/archives/2019/03/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/archives/2019/03/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Agent引擎的实现</title>
-      <link>http://localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <link>//localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>//localhost:1313/post/ch3.2.5-6-agent-%E5%BC%95%E6%93%8E%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
       <description>Angent的实现
 Overview 之前学习了状态迁移函数，并能绘制机器人。
 这节的目标是实现机器人的引擎，让机器人能动起来。
@@ -24,39 +24,39 @@ Overview 之前学习了状态迁移函数，并能绘制机器人。
     
     <item>
       <title>Cmake</title>
-      <link>http://localhost:1313/post/cmake/</link>
+      <link>//localhost:1313/post/cmake/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/cmake/</guid>
+      <guid>//localhost:1313/post/cmake/</guid>
       <description>Sophus RUN git clone https://github.com/yubaoliu/Sophus.git \  &amp;amp;&amp;amp; cd Sophus \  &amp;amp;&amp;amp; git checkout master \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j3 \  &amp;amp;&amp;amp; make install G2O RUN git clone https://github.com/yubaoliu/g2o.git \  &amp;amp;&amp;amp; cd g2o \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j 3 \  &amp;amp;&amp;amp; make install </description>
     </item>
     
     <item>
       <title>Ctags-VIM</title>
-      <link>http://localhost:1313/post/tags/</link>
+      <link>//localhost:1313/post/tags/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/tags/</guid>
+      <guid>//localhost:1313/post/tags/</guid>
       <description>Command	Function Ctrl + ]	Go to definition Ctrl + T	Jump back from the definition Ctrl + W Ctrl + ]	Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt;	List the tags that match &amp;lt;tag_name&amp;gt; :tn	Jump to the next matching tag :tp	Jump to the previous matching tag
 Shortcuts  Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag  Ctags  查看ctags支持的语言  ctags --list-languages  查看语言和扩展名的对应关系  ctags --list-maps  查看ctags可以识别和记录的语法元素  ctags --list-kinds ctags --list-kinds=c++  对当前目录下所有ctags支持的语言格式文件生成tags  ctags -R * ctags 默认并不会提取所有标识符的tag标签，以下命令可以生成更加详细的tag文件</description>
     </item>
     
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/post/network/</link>
+      <link>//localhost:1313/post/network/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/network/</guid>
+      <guid>//localhost:1313/post/network/</guid>
       <description>DNS vim /etc/resolv.conf
 nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy.conf $ sudo gedit /etc/apt/apt.conf.d/proxy.conf Acquire { HTTP::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; HTTPS::proxy &amp;#34;http://127.0.0.1:8080&amp;#34;; } Sftp  安装 ssh 服务端 sudo apt-get install openssh-server 显示 sshd 即可以成功连接 ps -e |grep ssh 如果不显示 sshd sudo /etc/init.d/ssh start  </description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/post/python/</link>
+      <link>//localhost:1313/post/python/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/python/</guid>
+      <guid>//localhost:1313/post/python/</guid>
       <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html
 ~/.pip/pip.conf
 [global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com Set source list for pip install pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple/ // 国内源 pip install 包名-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com References  pip安装包报错Could not find a version that satisfies the requirement pymysql (from versions: none)  </description>
@@ -64,10 +64,10 @@ nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy
     
     <item>
       <title>VIM</title>
-      <link>http://localhost:1313/post/vim/</link>
+      <link>//localhost:1313/post/vim/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vim/</guid>
+      <guid>//localhost:1313/post/vim/</guid>
       <description>Debug  go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb?  Termdebug :packadd termdebug Markdown   HELLO
   VIM 之插件篇
   import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
@@ -75,10 +75,10 @@ nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy
     
     <item>
       <title>强化学习</title>
-      <link>http://localhost:1313/post/reinforcement_learning/</link>
+      <link>//localhost:1313/post/reinforcement_learning/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/reinforcement_learning/</guid>
+      <guid>//localhost:1313/post/reinforcement_learning/</guid>
       <description>Resources   https://deepreinforcementlearningbook.org/
   https://github.com/deep-reinforcement-learning-book
   Reinforcement Learning Book: https://www.dbooks.org/reinforcement-learning-0262039249/
@@ -87,10 +87,10 @@ nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy
     
     <item>
       <title>机器人位姿描述</title>
-      <link>http://localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</link>
+      <link>//localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</guid>
+      <guid>//localhost:1313/post/ch3.1-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E6%8F%8F%E8%BF%B0/</guid>
       <description>Objective  绘制世界坐标系 如何描述机器人的位姿 如何绘制世界坐标系 如何绘制机器人位姿  可参考：3.2.2 ロボットの姿勢と描く
 対向２輪ロボット(Differential wheeled robot) 机器人位姿   世界坐标系记为 $\Sigma_{world}$
   位姿 (状态)：位置和朝向 $x = (x, y, \theta)^T$
@@ -102,10 +102,10 @@ Source Code import matplotlib.pyplot as plt import matplotlib.patches as patches
     
     <item>
       <title>机器人开发环境介绍</title>
-      <link>http://localhost:1313/post/ch1-environment/</link>
+      <link>//localhost:1313/post/ch1-environment/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch1-environment/</guid>
+      <guid>//localhost:1313/post/ch1-environment/</guid>
       <description>机器人开发环境介绍 In this section, we will tintroduce:
  the usage case of robots the development environment for simulation (Python + conda)  概率机器人详解 概率机器人详解 Homepage
 课件: ryuichiueda/LNPR_SLIDES
@@ -119,10 +119,10 @@ Environment Deployment  (optional) Anyconda or other virtual Python environment 
     
     <item>
       <title>机器人概率基础</title>
-      <link>http://localhost:1313/post/ch2-probabilistics/</link>
+      <link>//localhost:1313/post/ch2-probabilistics/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch2-probabilistics/</guid>
+      <guid>//localhost:1313/post/ch2-probabilistics/</guid>
       <description>平均値 $$\mu = \frac{1}{N}\sum_{i=0}^{N-1} z_i$$
  $z_0, z_1, \dots, z_{N-1}$: センサ値 $N$: センサ値の個数  分散、標準偏差 $$\sigma^2 = \frac{1}{N-1}\sum_{i=0}^{N-1} (z_i - \mu)^2 \quad (N&amp;gt;1)$$
 (素朴な）確率分布 ここでやりたいこと: 度数分布から、 未来にどんなセンサ値が得られそうかを予想
@@ -135,38 +135,38 @@ $$ p(x | \mu, \sigma^2 ) $$</description>
     
     <item>
       <title>机器学习</title>
-      <link>http://localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <link>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
       <description>Resources  introduction_to_ml_with_python  </description>
     </item>
     
     <item>
       <title>深度学习</title>
-      <link>http://localhost:1313/post/deeplearning/</link>
+      <link>//localhost:1313/post/deeplearning/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/deeplearning/</guid>
+      <guid>//localhost:1313/post/deeplearning/</guid>
       <description>Environment Setup !pip install numpy scipy matplotlib ipython scikit-learn pandas pillow Introduction to Artificial Neural Network Activation Function Step function import numpy as np import matplotlib.pylab as plt def step_function(x): return np.array(x&amp;gt;0, dtype=np.int) x = np.arange(-5.0, 5.0, 0.1) y = step_function(x) plt.plot(x, y) plt.ylim(-0.1, 1.1) plt.show() Sigmoid Function import numpy as np import matplotlib.pylab as plt def sigmoid(x): return 1 / (1 + np.exp(-x)) # x = np.array([-1.0, 1.0, 2.0]) # print(y) x = np.</description>
     </item>
     
     <item>
       <title>用动画来绘制Robot仿真环境</title>
-      <link>http://localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</link>
+      <link>//localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</guid>
+      <guid>//localhost:1313/post/ch3.2.3-%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BD%8D%E5%A7%BF%E5%8A%A8%E7%94%BB%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83/</guid>
       <description>Objective  用动画来绘制Robot仿真环境  重要函数 matplotlib.animation.FuncAnimation class matplotlib.animation.FuncAnimation(fig, func, frames=None, init_func=None, fargs=None, save_count=None, *, cache_frame_data=True, **kwargs)[source]  intervalnumber, optional Delay between frames in milliseconds. Defaults to 200. frames iterable, int, generator function, or None, optional fargstuple or None, optional Additional arguments to pass to each call to func.  Refer https://matplotlib.org/api/_as_gen/matplotlib.animation.FuncAnimation.html for detail.
 matplotlib.pyplot.plo  https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot  matplotlib.pyplot.plot(*args, scalex=True, scaley=True, data=None, **kwargs) 注意其返回值为： lines A list of Line2D objects representing the plotted data.</description>
     </item>
     
     <item>
       <title>算法-动态规划</title>
-      <link>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+      <link>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+      <guid>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
       <description>在线测试  https://www.luogu.com.cn/ https://onlinejudge.org/ https://leetcode-cn.com/  动态规划 斐波那契数 斐波那契数，通常用 F(n) 表示，形成的序列称为 斐波那契数列 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：
 F(0) = 0，F(1) = 1 F(n) = F(n - 1) + F(n - 2)，其中 n &amp;gt; 1 给你 n ，请计算 F(n) 。
 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/fibonacci-number
@@ -177,10 +177,10 @@ int fib(int n) { int F[n+1]; F[0] = 0; if (n &amp;lt;= 0) return F[0]; F[1] = 1;
     
     <item>
       <title>算法-最短路径</title>
-      <link>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link>
+      <link>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid>
+      <guid>//localhost:1313/post/%E7%AE%97%E6%B3%95-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84/</guid>
       <description>最短路径 Dijkstra 算法 基于贪心的单源最短路算法，其要求图中的边全部非负。
   Dijkstra’s shortest path algorithm
   戴克斯特拉算法-wiki
@@ -191,10 +191,10 @@ int fib(int n) { int F[n+1]; F[0] = 0; if (n &amp;lt;= 0) return F[0]; F[1] = 1;
     
     <item>
       <title>绘制Landmark</title>
-      <link>http://localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</link>
+      <link>//localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</guid>
+      <guid>//localhost:1313/post/ch3.3.1-%E7%BB%98%E5%88%B6landmark/</guid>
       <description>绘制地图点
 Overview 概率机器人详解 （Python） 3.3.1　点ランドマークの設置
  本文将介绍：
@@ -204,20 +204,20 @@ class Landmark: def __init__(self, x, y): self.pos = np.array([x, y]).T self.id 
     
     <item>
       <title>观测方程</title>
-      <link>http://localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</link>
+      <link>//localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</guid>
+      <guid>//localhost:1313/post/ch3.3-%E8%A7%82%E6%B5%8B%E6%96%B9%E7%A8%8B/</guid>
       <description>観測方程式 $$ \begin{pmatrix} \ell_j \\ \varphi_j \end{pmatrix} = \begin{pmatrix} \sqrt{(m_{j,x} - x)^2 + (m_{j,y} - y)^2} \\ \text{atan2}(m_{j,y} - y, m_{j,x} - x) - \theta \end{pmatrix} $$
  $z_j = h_j (x)$ $z_j = h(x, m_j)$（ランドマークの位置を変数とする場合） 関数$h_j$: 観測関数  参考代码 class IdealCamera: def __init__(self, env_map, \ distance_range=(0.5, 6.0), direction_range=(-math.pi/3, math.pi/3)): self.map = env_map self.lastdata = [] self.distance_range = distance_range self.direction_range = direction_range def visible(self, polarpos): if polarpos is None: return False return self.</description>
     </item>
     
     <item>
       <title>运动方程</title>
-      <link>http://localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</link>
+      <link>//localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</guid>
+      <guid>//localhost:1313/post/ch3.2.4-%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B/</guid>
       <description>内容  运动方程， 控制命令， 让机器人动起来。  理论 (Refered From: https://github.com/ryuichiueda/LNPR_SLIDES/blob/master/old_version/figs/robot_motion1.png)
  (Refered From: https://github.com/ryuichiueda/LNPR_SLIDES/raw/master/old_version/figs/robot_motion2.png)
 相关变量  速度: $nv [m/s]$ 角速度： $\omega [rad/s]$ 制御指令：从 $t-1$ 时刻到$t$时刻的运动指令 $u_t = (\nu_t, \omega_t)$   制御指令（せいぎょしれい）は離散時刻ごとにしか変えられないことにします。時刻$t-1$からt までの制御指令を$u_t = (\nu_t, \omega_t)$ と表記します。

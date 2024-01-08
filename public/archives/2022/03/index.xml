@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2022/03 on MILAI AI</title>
-    <link>http://localhost:1313/archives/2022/03/</link>
+    <link>//localhost:1313/archives/2022/03/</link>
     <description>Recent content in 2022/03 on MILAI AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="http://localhost:1313/archives/2022/03/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//localhost:1313/archives/2022/03/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debug</title>
-      <link>http://localhost:1313/post/debug/</link>
+      <link>//localhost:1313/post/debug/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/debug/</guid>
+      <guid>//localhost:1313/post/debug/</guid>
       <description>Rosrun set(CMAKE_BUILD_TYPE Debug) rosrun --prefix &amp;#39;gdb -ex run --args&amp;#39; [package_name] [node_name] </description>
     </item>
     
     <item>
       <title>Github使用技巧</title>
-      <link>http://localhost:1313/post/git/</link>
+      <link>//localhost:1313/post/git/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/git/</guid>
+      <guid>//localhost:1313/post/git/</guid>
       <description>使用Github的方法  利用镜像下载 通过代理网站下载 Gitee中转fork仓库下载 修改 HOSTS 文件进行加速 科学上网 (略)  加速网站  https://gitclone.com/ ghproxy GitHub 文件加速 https://gh.api.99988866.xyz http://toolwa.com/github/ https://github.zhlh6.cn https://fhefh2015.github.io/Fast-GitHub/ 浏览器插件 https://mirror.ghproxy.com/ https://www.github.do/ https://hub.0z.gs/ https://ghgo.feizhuqwq.workers.dev/ https://git.yumenaka.net/  通过修改 HOSTS 文件进行加速 第一步：获取 github 的 global.ssl.fastly 地址 访问：http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo 获取cdn和ip域名：
 得到：199.232.69.194 https://github.global.ssl.fastly.net
 第二步：获取github.com地址
@@ -37,10 +37,10 @@
     
     <item>
       <title>Linux使用技巧</title>
-      <link>http://localhost:1313/post/linux/</link>
+      <link>//localhost:1313/post/linux/</link>
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/linux/</guid>
+      <guid>//localhost:1313/post/linux/</guid>
       <description>查看各文件大小 du -h --max-depth=1 查看剩余空间 ~ df . -h Filesystem Size Used Avail Use% Mounted on /dev/nvme1n1p6 492G 457G 9.6G 98% / </description>
     </item>
     

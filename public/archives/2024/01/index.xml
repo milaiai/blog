@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2024/01 on MILAI AI</title>
+    <link>//localhost:1313/archives/2024/01/</link>
+    <description>Recent content in 2024/01 on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="//localhost:1313/archives/2024/01/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Terminal, VIM</title>
+      <link>//localhost:1313/post/terminal-editor/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/terminal-editor/</guid>
+      <description>oh my nvim and VIM  https://github.com/hardhackerlabs/oh-my-nvim  syntax vim.keymap.set({mode}, {lhs}, {rhs}, {opts}) File Explore Files   https://shapeshed.com/vim-netrw
+:! ls -lF :find path/to/file.txt :vs path/to/file.txt :sp path/to/file.txt :tabnew path/to/file.txt   netrw  https://github.com/prichrd/netrw.nvim  :Explore - opens netrw in the current window :Sexplore - opens netrw in a horizontal split :Vexplore - opens netrw in a vertical split let g:netrw_banner = 0 let g:netrw_liststyle = 3 let g:netrw_browse_split = 4 let g:netrw_altv = 1 let g:netrw_winsize = 25 &amp;#34; augroup ProjectDrawer &amp;#34; autocmd!</description>
+    </item>
+    
+  </channel>
+</rss>
