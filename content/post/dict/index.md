@@ -15,6 +15,16 @@ archives: ["2024/01"]
 - https://www.gingersoftware.com/grammarcheck
 - https://app.linguix.com/docs/my
 
+# deepl
+
+- https://www.deepl.com/
+
+# Fairy
+- https://github.com/revir/FairyDict
+
+# Umi-OCR
+- https://github.com/hiroi-sora/Umi-OCR
+
 # gnome-dictionary
 
 ```sh
