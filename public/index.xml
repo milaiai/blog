@@ -12,6 +12,58 @@
     
     
     <item>
+      <title>Pytorch &#43; C&#43;&#43; &#43; CUDA</title>
+      <link>//localhost:1313/post/pytorch-cuda/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/pytorch-cuda/</guid>
+      <description>Introduction  pytorch -&amp;gt; C++ -&amp;gt; CUDA pybind: call C++ from python CUDA GPU architechture   CUDA: grid -&amp;gt; block-&amp;gt;thread 为什么要有block这个中间层?  block 上限： $(2^{31}-1)*2^{16}*2^{16}$ Thread上限: 1024    Environment Building   conda create -n cppcuda python=3.8
+  conda activate cppcuda
+  Install pytorch
+  python -m pip install pip -U pip3 install torch torchvision torchaudio     pytorch path
+  how to check path</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>//localhost:1313/post/python/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/python/</guid>
+      <description>Cuda   CUDA Toolkit Archive
+  set env
+  export PATH=/usr/local/cuda/bin:$PATH  CUDA Toolkit 12.3  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/cuda-repo-ubuntu2004-12-3-local_12.3.2-545.23.08-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu2004-12-3-local_12.3.2-545.23.08-1_amd64.deb sudo cp /var/cuda-repo-ubuntu2004-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/ sudo apt-get update sudo apt-get -y install cuda-toolkit-12-3 Install Driver
+sudo apt-get install -y cuda-drivers sudo apt-get install -y nvidia-kernel-open-545 sudo apt-get install -y cuda-drivers-545 Cudnn  https://developer.nvidia.com/rdp/cudnn-archive  Conda  https://docs.anaconda.com/free/anaconda/install/linux/  wget -c https://repo.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>//localhost:1313/post/ubuntu/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/ubuntu/</guid>
+      <description>Locate package sudo updatedb locate eigen3 Source list Ubuntu 20.04  阿里云镜像源  deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse deb http://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>Colmap</title>
+      <link>//localhost:1313/post/colmap/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/colmap/</guid>
+      <description>Install  Get repo  git clone https://github.com/colmap/colmap  https://colmap.github.io/install.html install dependencies  sudo apt-get install \  git \  cmake \  ninja-build \  build-essential \  libboost-program-options-dev \  libboost-filesystem-dev \  libboost-graph-dev \  libboost-system-dev \  libeigen3-dev \  libflann-dev \  libfreeimage-dev \  libmetis-dev \  libgoogle-glog-dev \  libgtest-dev \  libsqlite3-dev \  libglew-dev \  qtbase5-dev \  libqt5opengl5-dev \  libcgal-dev \  libceres-dev  vim CMakeLists.</description>
+    </item>
+    
+    <item>
+      <title>gaussian_splatting</title>
+      <link>//localhost:1313/post/gaussian-splatting/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/gaussian-splatting/</guid>
+      <description>Install  Cuda: 12.2 conda env;  conda create -n gaussian_splatting python=3.8 conda activate gaussian_splatting pip3 install torch torchvision torchaudio pip3 install plyfile tqdm pillow pip3 install submodules/diff-gaussian-rasterization pip3 install submodules/simple-knn </description>
+    </item>
+    
+    <item>
       <title>Dictionary</title>
       <link>//localhost:1313/post/dict/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
@@ -20,16 +72,6 @@
       <description>Grammer check  https://quillbot.com/ https://languagetool.org/ https://www.gingersoftware.com/grammarcheck https://app.linguix.com/docs/my  deepl  https://www.deepl.com/  Fairy  https://github.com/revir/FairyDict  Umi-OCR  https://github.com/hiroi-sora/Umi-OCR  gnome-dictionary sudo apt install gnome-dictionary GoldenDict sudo apt install goldendict artha sudo apt install artha eudic https://www.eudic.net/v4/en/app/download
 wordnet-gui sudo apt install wordnet-gui iciba, 写作校对 https://www.iciba.com/grammar
 Dict sudo apt install dict Dict download  https://github.com/colordict/colordict.github.io/tree/master https://www.mdict.cn/wp/?page_id=5227&amp;amp;lang=zh  </description>
-    </item>
-    
-    <item>
-      <title>Terminal, VIM</title>
-      <link>//localhost:1313/post/terminal-editor/</link>
-      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/terminal-editor/</guid>
-      <description>oh my nvim and VIM  https://github.com/hardhackerlabs/oh-my-nvim  syntax vim.keymap.set({mode}, {lhs}, {rhs}, {opts}) File Explore Files   https://shapeshed.com/vim-netrw
-:! ls -lF :find path/to/file.txt :vs path/to/file.txt :sp path/to/file.txt :tabnew path/to/file.txt   netrw  https://github.com/prichrd/netrw.nvim  :Explore - opens netrw in the current window :Sexplore - opens netrw in a horizontal split :Vexplore - opens netrw in a vertical split let g:netrw_banner = 0 let g:netrw_liststyle = 3 let g:netrw_browse_split = 4 let g:netrw_altv = 1 let g:netrw_winsize = 25 &amp;#34; augroup ProjectDrawer &amp;#34; autocmd!</description>
     </item>
     
     <item>
@@ -74,15 +116,6 @@ Build  Get project  git clone https://github.com/yubaoliu/VINS-Fusion -b dev  Ub
       <guid>//localhost:1313/post/nfs/</guid>
       <description>服务器 安装 sudo apt update sudo apt install nfs-kernel-server 配置文件 /etc/exports
 /srv/nfs4 192.168.33.0/24(rw,sync,no_subtree_check,crossmnt,fsid=0) /srv/nfs4/backups 192.168.33.0/24(ro,sync,no_subtree_check) 192.168.33.3(rw,sync,no_subtree_check) /srv/nfs4/www 192.168.33.110(rw,sync,no_subtree_check) /mnt/nfs_share subnet(rw,sync,no_subtree_check) /var/nfs/general client_ip(rw,sync,no_subtree_check) /home client_ip(rw,sync,no_root_squash,no_subtree_check)  fsid=0定义了 NFS 根目录 crossmnt选项是必要的，用来分享被导出目录的子目录 ro 该主机对该共享目录有只读权限 rw 该主机对该共享目录有读写权限, The client is granted both read and write permission to the volume. root_squash 客户机用root用户访问该共享文件夹时，将root用户映射成匿名用户 no_root_squash 客户机用root访问该共享文件夹时，不映射root用户, As mentioned earlier, NFS will translate any request from the remote root user to a non-privileged user. This is an intended security feature to prevent unwanted access to the host system.</description>
-    </item>
-    
-    <item>
-      <title>Debug</title>
-      <link>//localhost:1313/post/debug/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/debug/</guid>
-      <description>Rosrun set(CMAKE_BUILD_TYPE Debug) rosrun --prefix &amp;#39;gdb -ex run --args&amp;#39; [package_name] [node_name] </description>
     </item>
     
     <item>
@@ -166,8 +199,8 @@ EuRoC EuRoC_download
       
       <guid>//localhost:1313/post/docker/</guid>
       <description>daemon You may meet such error:
-ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout sudo vim /etc/docker/daemon.json
-{ “registry-mirrors”:[“https://docker.mirrors.ustc.edu.cn”] } commands  systemctl daemon-reload systemctl restart docker remove all images and containers  docker rm $(docker ps -a -q) docker rmi $(docker images -q) Docker Proxy Sometimes we need to download the developing packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;.</description>
+ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout xxxxxxxxxx set(CMAKE_BUILD_TYPE Debug)​rosrun &amp;ndash;prefix &amp;lsquo;gdb -ex run &amp;ndash;args&amp;rsquo; [package_name] [node_name]sh
+{ “registry-mirrors”:[“https://docker.mirrors.ustc.edu.cn”] } commands  systemctl daemon-reload systemctl restart docker remove all images and containers  docker rm $(docker ps -a -q) docker rmi $(docker images -q) Docker Proxy Sometimes we need to download the developing packages from the external Network when do the research.</description>
     </item>
     
     <item>
@@ -203,25 +236,6 @@ Overview 之前学习了状态迁移函数，并能绘制机器人。
     </item>
     
     <item>
-      <title>Cmake</title>
-      <link>//localhost:1313/post/cmake/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/cmake/</guid>
-      <description>Sophus RUN git clone https://github.com/yubaoliu/Sophus.git \  &amp;amp;&amp;amp; cd Sophus \  &amp;amp;&amp;amp; git checkout master \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j3 \  &amp;amp;&amp;amp; make install G2O RUN git clone https://github.com/yubaoliu/g2o.git \  &amp;amp;&amp;amp; cd g2o \  &amp;amp;&amp;amp; mkdir build \  &amp;amp;&amp;amp; cd build \  &amp;amp;&amp;amp; cmake .. -DCMAKE_BUILD_TYPE=Release \  &amp;amp;&amp;amp; make -j 3 \  &amp;amp;&amp;amp; make install </description>
-    </item>
-    
-    <item>
-      <title>Ctags-VIM</title>
-      <link>//localhost:1313/post/tags/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/tags/</guid>
-      <description>Command	Function Ctrl + ]	Go to definition Ctrl + T	Jump back from the definition Ctrl + W Ctrl + ]	Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt;	List the tags that match &amp;lt;tag_name&amp;gt; :tn	Jump to the next matching tag :tp	Jump to the previous matching tag
-Shortcuts  Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag  Ctags  查看ctags支持的语言  ctags --list-languages  查看语言和扩展名的对应关系  ctags --list-maps  查看ctags可以识别和记录的语法元素  ctags --list-kinds ctags --list-kinds=c++  对当前目录下所有ctags支持的语言格式文件生成tags  ctags -R * ctags 默认并不会提取所有标识符的tag标签，以下命令可以生成更加详细的tag文件</description>
-    </item>
-    
-    <item>
       <title>Network</title>
       <link>//localhost:1313/post/network/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
@@ -243,17 +257,6 @@ nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy
     </item>
     
     <item>
-      <title>Python</title>
-      <link>//localhost:1313/post/python/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/python/</guid>
-      <description>Pip source list https://www.cnblogs.com/chenjo/p/14071864.html
-~/.pip/pip.conf
-[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple [install] trusted-host=mirrors.aliyun.com Set source list for pip install pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple/ // 国内源 pip install 包名-i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com References  pip安装包报错Could not find a version that satisfies the requirement pymysql (from versions: none)  </description>
-    </item>
-    
-    <item>
       <title>VIM</title>
       <link>//localhost:1313/post/vim/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
@@ -261,7 +264,8 @@ nameserver 8.8.8.8 nameserver 8.8.4.4 APT $ sudo touch /etc/apt/apt.conf.d/proxy
       <guid>//localhost:1313/post/vim/</guid>
       <description>Debug  go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb?  Termdebug :packadd termdebug Markdown   HELLO
   VIM 之插件篇
-  import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
+  import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$
+Command	Function Ctrl + ]	Go to definition Ctrl + T	Jump back from the definition Ctrl + W Ctrl + ]	Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt;	List the tags that match &amp;lt;tag_name&amp;gt; :tn	Jump to the next matching tag :tp	Jump to the previous matching tag</description>
     </item>
     
     <item>
@@ -322,15 +326,6 @@ $$ z \sim P_{\textbf{z}\text{LiDAR}} $$
 Probabilistic Model ガウス分布の当てはめ
 连续的情况 $$ p(z | \mu, \sigma^2 ) = \frac{1}{\sqrt{2\pi}\sigma} e^{ - \frac{(z - \mu)^2}{2\sigma^2}} $$
 $$ p(x | \mu, \sigma^2 ) $$</description>
-    </item>
-    
-    <item>
-      <title>机器学习</title>
-      <link>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
-      <description>Resources  introduction_to_ml_with_python  </description>
     </item>
     
     <item>
@@ -438,6 +433,15 @@ $$ \theta_t = \theta_{t-1} + \int_{0}^{\delta t} \omega_t dt = \theta_{t-1} + \o
       <guid>//localhost:1313/contact/</guid>
       <description> To contact us, please fill out the form below.
        </description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>//localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/search/</guid>
+      <description></description>
     </item>
     
   </channel>

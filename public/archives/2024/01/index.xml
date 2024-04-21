@@ -11,6 +11,45 @@
     
     
     <item>
+      <title>Python</title>
+      <link>//localhost:1313/post/python/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/python/</guid>
+      <description>Cuda   CUDA Toolkit Archive
+  set env
+  export PATH=/usr/local/cuda/bin:$PATH  CUDA Toolkit 12.3  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600 wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/cuda-repo-ubuntu2004-12-3-local_12.3.2-545.23.08-1_amd64.deb sudo dpkg -i cuda-repo-ubuntu2004-12-3-local_12.3.2-545.23.08-1_amd64.deb sudo cp /var/cuda-repo-ubuntu2004-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/ sudo apt-get update sudo apt-get -y install cuda-toolkit-12-3 Install Driver
+sudo apt-get install -y cuda-drivers sudo apt-get install -y nvidia-kernel-open-545 sudo apt-get install -y cuda-drivers-545 Cudnn  https://developer.nvidia.com/rdp/cudnn-archive  Conda  https://docs.anaconda.com/free/anaconda/install/linux/  wget -c https://repo.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>//localhost:1313/post/ubuntu/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/ubuntu/</guid>
+      <description>Locate package sudo updatedb locate eigen3 Source list Ubuntu 20.04  阿里云镜像源  deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse deb http://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>Colmap</title>
+      <link>//localhost:1313/post/colmap/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/colmap/</guid>
+      <description>Install  Get repo  git clone https://github.com/colmap/colmap  https://colmap.github.io/install.html install dependencies  sudo apt-get install \  git \  cmake \  ninja-build \  build-essential \  libboost-program-options-dev \  libboost-filesystem-dev \  libboost-graph-dev \  libboost-system-dev \  libeigen3-dev \  libflann-dev \  libfreeimage-dev \  libmetis-dev \  libgoogle-glog-dev \  libgtest-dev \  libsqlite3-dev \  libglew-dev \  qtbase5-dev \  libqt5opengl5-dev \  libcgal-dev \  libceres-dev  vim CMakeLists.</description>
+    </item>
+    
+    <item>
+      <title>gaussian_splatting</title>
+      <link>//localhost:1313/post/gaussian-splatting/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/gaussian-splatting/</guid>
+      <description>Install  Cuda: 12.2 conda env;  conda create -n gaussian_splatting python=3.8 conda activate gaussian_splatting pip3 install torch torchvision torchaudio pip3 install plyfile tqdm pillow pip3 install submodules/diff-gaussian-rasterization pip3 install submodules/simple-knn </description>
+    </item>
+    
+    <item>
       <title>Dictionary</title>
       <link>//localhost:1313/post/dict/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
@@ -19,16 +58,6 @@
       <description>Grammer check  https://quillbot.com/ https://languagetool.org/ https://www.gingersoftware.com/grammarcheck https://app.linguix.com/docs/my  deepl  https://www.deepl.com/  Fairy  https://github.com/revir/FairyDict  Umi-OCR  https://github.com/hiroi-sora/Umi-OCR  gnome-dictionary sudo apt install gnome-dictionary GoldenDict sudo apt install goldendict artha sudo apt install artha eudic https://www.eudic.net/v4/en/app/download
 wordnet-gui sudo apt install wordnet-gui iciba, 写作校对 https://www.iciba.com/grammar
 Dict sudo apt install dict Dict download  https://github.com/colordict/colordict.github.io/tree/master https://www.mdict.cn/wp/?page_id=5227&amp;amp;lang=zh  </description>
-    </item>
-    
-    <item>
-      <title>Terminal, VIM</title>
-      <link>//localhost:1313/post/terminal-editor/</link>
-      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/terminal-editor/</guid>
-      <description>oh my nvim and VIM  https://github.com/hardhackerlabs/oh-my-nvim  syntax vim.keymap.set({mode}, {lhs}, {rhs}, {opts}) File Explore Files   https://shapeshed.com/vim-netrw
-:! ls -lF :find path/to/file.txt :vs path/to/file.txt :sp path/to/file.txt :tabnew path/to/file.txt   netrw  https://github.com/prichrd/netrw.nvim  :Explore - opens netrw in the current window :Sexplore - opens netrw in a horizontal split :Vexplore - opens netrw in a vertical split let g:netrw_banner = 0 let g:netrw_liststyle = 3 let g:netrw_browse_split = 4 let g:netrw_altv = 1 let g:netrw_winsize = 25 &amp;#34; augroup ProjectDrawer &amp;#34; autocmd!</description>
     </item>
     
   </channel>

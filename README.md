@@ -5,6 +5,7 @@
 ```sh
 npm install -g postcss-cli
 npm install -g autoprefixer
+npm install fuse.js
 ```
 
 - themei: https://themes.gohugo.io/blonde/

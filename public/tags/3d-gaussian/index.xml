@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D-gaussian on MILAI AI</title>
+    <link>//localhost:1313/tags/3d-gaussian/</link>
+    <description>Recent content in 3D-gaussian on MILAI AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jan 2024 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//localhost:1313/tags/3d-gaussian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gaussian_splatting</title>
+      <link>//localhost:1313/post/gaussian-splatting/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/post/gaussian-splatting/</guid>
+      <description>Install  Cuda: 12.2 conda env;  conda create -n gaussian_splatting python=3.8 conda activate gaussian_splatting pip3 install torch torchvision torchaudio pip3 install plyfile tqdm pillow pip3 install submodules/diff-gaussian-rasterization pip3 install submodules/simple-knn </description>
+    </item>
+    
+  </channel>
+</rss>

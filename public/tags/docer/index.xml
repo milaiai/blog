@@ -18,8 +18,8 @@
       
       <guid>//localhost:1313/post/docker/</guid>
       <description>daemon You may meet such error:
-ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout sudo vim /etc/docker/daemon.json
-{ “registry-mirrors”:[“https://docker.mirrors.ustc.edu.cn”] } commands  systemctl daemon-reload systemctl restart docker remove all images and containers  docker rm $(docker ps -a -q) docker rmi $(docker images -q) Docker Proxy Sometimes we need to download the developing packages from the external Network when do the research. However, I found I cannot let docker access the proxy depoloyed on my host machine especially in the build stage, such as &amp;ldquo;docker-compose build&amp;rdquo;.</description>
+ERROR: Service &amp;#39;web&amp;#39; failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout xxxxxxxxxx set(CMAKE_BUILD_TYPE Debug)​rosrun &amp;ndash;prefix &amp;lsquo;gdb -ex run &amp;ndash;args&amp;rsquo; [package_name] [node_name]sh
+{ “registry-mirrors”:[“https://docker.mirrors.ustc.edu.cn”] } commands  systemctl daemon-reload systemctl restart docker remove all images and containers  docker rm $(docker ps -a -q) docker rmi $(docker images -q) Docker Proxy Sometimes we need to download the developing packages from the external Network when do the research.</description>
     </item>
     
   </channel>

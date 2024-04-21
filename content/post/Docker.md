@@ -19,7 +19,7 @@ You may meet such error:
 ERROR: Service 'web' failed to build: Get https://registry-1.docker.io/v2/library/python/manifests/2.7: net/http: TLS handshake timeout
 ```
 
-sudo vim /etc/docker/daemon.json
+xxxxxxxxxx set(CMAKE_BUILD_TYPE Debug)​rosrun --prefix 'gdb -ex run --args' [package_name] [node_name]sh
 
 ```sh
 {

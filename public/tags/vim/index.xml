@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>Ctags-VIM</title>
-      <link>//localhost:1313/post/tags/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:1313/post/tags/</guid>
-      <description>Command	Function Ctrl + ]	Go to definition Ctrl + T	Jump back from the definition Ctrl + W Ctrl + ]	Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt;	List the tags that match &amp;lt;tag_name&amp;gt; :tn	Jump to the next matching tag :tp	Jump to the previous matching tag
-Shortcuts  Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳转。 Ctrl+t or Ctrl + o: 跳转到前一次的tag处 Ctrl+w+]: 分割当前窗口，并且跳转到光标下的tag  Ctags  查看ctags支持的语言  ctags --list-languages  查看语言和扩展名的对应关系  ctags --list-maps  查看ctags可以识别和记录的语法元素  ctags --list-kinds ctags --list-kinds=c++  对当前目录下所有ctags支持的语言格式文件生成tags  ctags -R * ctags 默认并不会提取所有标识符的tag标签，以下命令可以生成更加详细的tag文件</description>
-    </item>
-    
-    <item>
       <title>VIM</title>
       <link>//localhost:1313/post/vim/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
@@ -29,7 +19,8 @@ Shortcuts  Ctrl+] : 取出当前光标下的word作为tag的名字并进行跳�
       <guid>//localhost:1313/post/vim/</guid>
       <description>Debug  go-vim-debugging-with-gdb Vim 调试：termdebug 入门 Debugging in Vim How to use ConqueGDB in Vim How does debugging with VIM and gdb?  Termdebug :packadd termdebug Markdown   HELLO
   VIM 之插件篇
-  import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$</description>
+  import cv2 echo &amp;#34;hello&amp;#34; $$ a+b - 1= c^2 $$
+Command	Function Ctrl + ]	Go to definition Ctrl + T	Jump back from the definition Ctrl + W Ctrl + ]	Open the definition in a horizontal split :ts &amp;lt;tag_name&amp;gt;	List the tags that match &amp;lt;tag_name&amp;gt; :tn	Jump to the next matching tag :tp	Jump to the previous matching tag</description>
     </item>
     
   </channel>
