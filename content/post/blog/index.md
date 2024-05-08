@@ -9,6 +9,11 @@ tags: ["hugo"]
 archives: ["2024/01"]
 ---
 
+# Nodejs
+
+
+- [How to install Node.js 21 on Ubuntu](https://joshtronic.com/2023/11/12/how-to-install-node-js-21-on-ubuntu/)
+
 # Hugo
 
 

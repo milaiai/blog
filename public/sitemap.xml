@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//localhost:1313/tags/cuda/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/bank/</loc>
+    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>//localhost:1313/post/</loc>
+    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/post/bank/</loc>
+    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/tags/cuda/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,11 +34,6 @@
   
   <url>
     <loc>//localhost:1313/post/pytorch-cuda/</loc>
-    <lastmod>2024-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -370,6 +380,10 @@
   
   <url>
     <loc>//localhost:1313/archives/2024/04/</loc>
+  </url>
+  
+  <url>
+    <loc>//localhost:1313/archives/2024/05/</loc>
   </url>
   
   <url>
