@@ -2,11 +2,11 @@
 author: "Yubao"
 title: "Anime"
 image: "img/cover.jpg"
-draft: true
 date: 2023-12-28
 description: "Anime"
 tags: ["Anime"]
 archives: ["2023/12"]
+draft: true
 ---
 
 - 缺钱命
