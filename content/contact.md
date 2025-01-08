@@ -1,7 +1,6 @@
 ---
 title: "Contact"
 description: "About me"
-date: 2019-02-30
 aliases: ["contact"]
 author: "Yubao"
 ---
