@@ -3,7 +3,7 @@
 author = "Yubao"
 title = "Dataset"
 date = "2021-05-06"
-description = "VIM"
+description = "Dataset"
 image = "img/cover.jpg"
 tags = [
 "Dataset",
@@ -80,4 +80,30 @@ http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/calibration_dataset
 
 
 # Papers
+
+## DexCap
+
+[1] C. Wang, H. Shi, W. Wang, R. Zhang, L. Fei-Fei, and C. K. Liu,  DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation,  Jul. 04, 2024, *arXiv*: arXiv:2403.07788. 
+
+![](image-20240830144340168.png)
+
+
+
+## Universal Manipulation Interface
+
+[1] C. Chi *et al.*,  Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots,  Mar. 05, 2024, *arXiv*: arXiv:2402.10329. 
+
+![](image-20240830144235703.png)
+
+
+
+## **HIRO Hand**
+
+- https://sites.google.com/view/hiro-hand/%E9%A6%96%E9%A1%B5
+
+![](https://lh3.googleusercontent.com/xkw2JLC6wZH98qVg1qZEL06N1tzpJC-rHutPgFPlzUTPfuruWdd-s32W0FIgYAbKAZSpZ8mzJHkw0ziWSQfpLVyS6aC7QXkS_lqU0688ub3LlmWDAFM6-gVKmfIhgOcy=w1280)
+
+# Others
+
+- Omni6DPose
 - FAB-MAP: https://www.robots.ox.ac.uk/~mobile/IJRR_2008_Dataset/

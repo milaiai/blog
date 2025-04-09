@@ -29,26 +29,28 @@ archives: ["2024/04"]
 - ``conda activate cppcuda``
 
 - Install [pytorch](https://pytorch.org/get-started/locally/)
-
+  
   - ```
     python -m pip install pip -U
     pip3 install torch torchvision torchaudio
     ```
 
--  pytorch path
-
+- pytorch path
+  
   - how to check path
-   ```sh
+    
+    ```sh
     import torch
     print(torch.__file__)
-   ```
-
+    ```
+  
   - path example:
-  ```sh
-  "/usr/include/python3.8",
-  "/home/.local/lib/python3.8/site-packages/torch/include/",
-  "/home/.local/lib/python3.8/site-packages/torch/include/torch/csrc/api/include"
-  ```
+    
+    ```sh
+    "/usr/include/python3.8",
+    "/home/.local/lib/python3.8/site-packages/torch/include/",
+    "/home/.local/lib/python3.8/site-packages/torch/include/torch/csrc/api/include"
+    ```
 
 - Python setup Example for CppExtension
 
@@ -88,13 +90,18 @@ setup(
 ## Trilinear interpolation
 
 - Input
+  
   - feats: (N, 8, F)
     - N: 多少个volume
     - 8： 8个顶点
     - F: 每个顶点的特征
+
 - Output
-  -  points: (N, 3) 差值后的点
+  
+  - points: (N, 3) 差值后的点
+
 - 平行运算：
+  
   - N个点
   - F平行
 
@@ -162,11 +169,8 @@ raise ValueError("setuptools>=49.4.0 is required")
 ValueError: setuptools>=49.4.0 is required
 ```
 
-
-
 # References
 
 - [Pytorch+cpp/cuda extension 教學 tutorial 1](https://www.youtube.com/watch?v=l_Rpk6CRJYI&ab_channel=AI%E8%91%B5)
 - https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability
 - https://github.com/kwea123/pytorch-cppcuda-tutorial
-

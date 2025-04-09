@@ -25,3 +25,16 @@ du -h --max-depth=1
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/nvme1n1p6  492G  457G  9.6G  98% /
 ```
+
+# Kernel
+
+```sh
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt update
+sudo apt install mainline
+```
+
+- https://askubuntu.com/questions/700214/how-do-i-install-an-old-kernel
+
+
+

@@ -28,13 +28,13 @@ post_asset_folder = true
 base_color = "bg-gray-800"
 
 #Site description
-description = "Blonde theme for Hugo."
+description = "Blog of Yubao."
 
 # The number of articles to be displayed on a single page.
-paginator_pages = "5"
+paginator_pages = "25"
 
 # Enable this if you want the archive list to be in a drop-down format.
-archive_dropdown = "false"
+archive_dropdown = "true"
 
 # Number of tags to be displayed.
 tagsLimit = 20
@@ -43,42 +43,42 @@ tagsLimit = 20
 # Light mode by default : light
 darkmode = "light"
 
-  [params.ad]
-    # Google AdSense
-    # ex. ca-pub-0000000000000000
-    googleAdSense = ""
+[params.ad]
+  # Google AdSense
+  # ex. ca-pub-0000000000000000
+  googleAdSense = ""
 
-    # ex. 000000000
-    adslot = ""
+  # ex. 000000000
+  adslot = ""
 
-    # Placement of ads
-    postTop = false
-    postBottom = false
+  # Placement of ads
+  postTop = false
+  postBottom = false
 
-  [params.post]
-    # Show thumbnails
-    thumbnail = true
+[params.post]
+  # Show thumbnails
+  thumbnail = true
 
-    # Disable the "NO IMAGE" image.
-    noimage = false
+  # Disable the "NO IMAGE" image.
+  noimage = false
 
-    # See the Tailwind CSS documentation to set it up.
-    # Recommended settings are h-32 to h-48.
-    # https://tailwindcss.com/docs/height
-    thumbnail_height = "lg:h-44"
+  # See the Tailwind CSS documentation to set it up.
+  # Recommended settings are h-32 to h-48.
+  # https://tailwindcss.com/docs/height
+  thumbnail_height = "lg:h-44"
 
-    # https://tailwindcss.com/docs/width
-    thumbnail_width = "lg:w-auto"
+  # https://tailwindcss.com/docs/width
+  thumbnail_width = "lg:w-auto"
 
-    # Number of characters in description
-    description = "130"
+  # Number of characters in description
+  description = "130"
 
-  [params.widgets]
-    # Display widgets
-    display = true
+[params.widgets]
+  # Display widgets
+  display = true
 
-    # Order of widgets to display
-    widgets = ["search", "archive", "category", "tags", "recent"]
+  # Order of widgets to display
+  widgets = ["tags",  "category", "archive",  "recent", "search"]
 
 # If you're using Yandex.Metrica, you can enable this feature.
 #[params.analytics.yandexmetrica]
@@ -142,3 +142,9 @@ archive = "archives"
 
   [services.twitter]
     disableInlineCSS = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 1

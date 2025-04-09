@@ -13,11 +13,14 @@ archives = ["2022/04"]
 +++
 
 # 服务器
+
 ## 安装
+
 ```sh
 sudo apt update
 sudo apt install nfs-kernel-server
 ```
+
 ## 配置文件
 
 /etc/exports
@@ -30,6 +33,7 @@ sudo apt install nfs-kernel-server
 /var/nfs/general    client_ip(rw,sync,no_subtree_check)
 /home               client_ip(rw,sync,no_root_squash,no_subtree_check)
 ```
+
 - fsid=0定义了 NFS 根目录
 - crossmnt选项是必要的，用来分享被导出目录的子目录
 - ro                          该主机对该共享目录有只读权限
@@ -54,12 +58,14 @@ sudo mount --bind /var/www /srv/nfs4/www
 上面的绑定，重启之后便会失效，可以修改fstab文件实现永久绑定。
 
 永久挂载：  /etc/fstab
+
 ```sh
 /opt/backups /srv/nfs4/backups  none   bind   0   0
 /var/www     /srv/nfs4/www      none   bind   0   0
 ```
 
 使配置文件生效
+
 ```sh
 sudo exportfs -ra
 ```
@@ -68,7 +74,7 @@ sudo exportfs -ra
 
 ```sh
  sudo exportfs -v
- ```
+```
 
 exportfs用法
 
@@ -78,26 +84,27 @@ exportfs用法
 -v ：将详细的信息输出到屏幕上
 
 # 防火墙
- ```sh
- sudo ufw status
- ```
 
- ```sh
- sudo ufw enable
- sudo ufw disable
- sudo ufw status
- ```
+```sh
+sudo ufw status
+```
 
+```sh
+sudo ufw enable
+sudo ufw disable
+sudo ufw status
+```
 
 允许某个IP或any访问nfs端口
 
- ```sh
+```sh
 sudo ufw allow nfs
 sudo ufw allow from 31.171.250.221 to any port nfs
 sudo ufw allow from any to any port nfs
- ```
+```
 
 查看端口
+
 ```sh
 $rpcinfo -p
 program vers proto   port  service
@@ -128,13 +135,12 @@ program vers proto   port  service
 
 确认nfs相关服务组件及端口占用如下:
 
-
-| 服务名称   | 端口名称 | 协议名称 | 备注                       |
-|------------|----------|----------|----------------------------|
-| nfs        | 2049     | tcp/udp  | 端口固定                   |
-| portmapper | 111      | tcp/udp  | 端口固定                   |
-| mountd     | 20048    | tcp/udp  | 端口不固定，需人为修改固定 |
-| nlockmgr   | 42315    | tcp/udp  | 端口不固定，需人为修改固定 |
+| 服务名称       | 端口名称  | 协议名称    | 备注            |
+| ---------- | ----- | ------- | ------------- |
+| nfs        | 2049  | tcp/udp | 端口固定          |
+| portmapper | 111   | tcp/udp | 端口固定          |
+| mountd     | 20048 | tcp/udp | 端口不固定，需人为修改固定 |
+| nlockmgr   | 42315 | tcp/udp | 端口不固定，需人为修改固定 |
 
 - 更改mountd 服务端口为20048
 
@@ -144,13 +150,15 @@ echo "mountd 20048/udp" >> /etc/services
 ```
 
 - 更改nlockmgr 服务端口为42315
-```sh
-echo "fs.nfs.nlm_udpport=42315" >> /etc/sysctl.conf
-echo "fs.nfs.nlm_tcpport=42315" >> /etc/sysctl.conf
-sysctl -p
-```
+  
+  ```sh
+  echo "fs.nfs.nlm_udpport=42315" >> /etc/sysctl.conf
+  echo "fs.nfs.nlm_tcpport=42315" >> /etc/sysctl.conf
+  sysctl -p
+  ```
+
 - nfs服务端防火墙开放相关服务固定端口
-服务端防火墙开放2049 、111 、20048 、42315 端口，此时客户端可正常访问挂载
+  服务端防火墙开放2049 、111 、20048 、42315 端口，此时客户端可正常访问挂载
 
 ```sh
 ufw allow 2049/tcp
@@ -177,37 +185,45 @@ $ sudo mount host_ip:/home /nfs/home
 ```
 
 ## 卸载
+
 ```sh
 sudo umount /nfs/general
 ```
 
 # 常用命令与技巧
+
 ## versions
+
 ```sh
 $sudo cat /proc/fs/nfsd/versions
 -2 +3 +4 +4.1 +4.2
 ```
 
 ## 文件访问权限
+
 ```sh
 sudo chown -R nobody:nogroup /mnt/nfs_share/
 ```
 
 ## 重启服务
+
 ```sh
 sudo systemctl restart nfs-kernel-server
 ```
 
 ## 查看挂载情况
+
 ```sh
 $df -h
 $showmount -e IP
 ```
 
 ## 查看大小
+
 ```sh
 du -sh /nfs/general
 ```
+
 ## 客户端nfs挂载协议与服务端不一致, 可以用nfsvers来指定NFS的版本
 
 ```sh
@@ -215,6 +231,7 @@ mount -t nfs -o nfsvers=3 x.x.x.x:/share /mnt
 ```
 
 ## nfs无法提供锁服务
+
 - 使用远程锁：启动服务端rpc.statd服务，使用这个服务提供远程锁
 - 使用本地锁：客户端挂载指定-o nolock，查看此时客户端挂载参数使用本地锁（local_lock=all）
 
@@ -223,6 +240,7 @@ mount -t nfs -o nolock x.x.x.x:/share /mnt
 ```
 
 # References
+
 - [Installing NFS on Ubuntu 20.04 server](https://medium.com/geekculture/installing-nfs-on-ubuntu-20-04-server-3993bf9ac1b6)
 - [How to Install NFS Client and Server on Ubuntu 20.04](https://www.howtoforge.com/how-to-install-nfs-client-and-server-on-ubuntu-2004/)
 - [如何在 Ubuntu 18.04 上安装和配置 NFS 服务器](https://cloud.tencent.com/developer/article/1626660)

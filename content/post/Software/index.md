@@ -9,14 +9,22 @@ tags: ["software"]
 archives: ["2024/12"]
 ---
 
+# # Miniforge
+
+```shell
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+```
+
 # rclone
+
 ```sh
 curl https://rclone.org/install.sh | sudo bash
 ```
 
 # OneDrive
 
-## onedrive 
+## onedrive
+
 - https://github.com/abraunegg/onedrive/blob/master/docs/ubuntu-package-install.md
 
 - Ubuntu 20
@@ -33,8 +41,8 @@ onedrive --synchronize
 ```
 
 ## rclone
-    - [Setting up OneDrive on Linux](https://kb.uconn.edu/space/IKB/26050527301/Setting+up+OneDrive+on+Linux)
 
+    - [Setting up OneDrive on Linux](https://kb.uconn.edu/space/IKB/26050527301/Setting+up+OneDrive+on+Linux)
 
 # oh my nvim  and VIM
 
@@ -47,17 +55,21 @@ vim.keymap.set({mode}, {lhs}, {rhs}, {opts})
 ```
 
 ## File Explore
-### Files
-- https://shapeshed.com/vim-netrw
 
-    ```sh
-    :! ls -lF
-    :find path/to/file.txt
-    :vs path/to/file.txt
-    :sp path/to/file.txt
-    :tabnew path/to/file.txt
-    ```
-### netrw
+### Files
+
+- https://shapeshed.com/vim-netrw
+  
+  ```sh
+  :! ls -lF
+  :find path/to/file.txt
+  :vs path/to/file.txt
+  :sp path/to/file.txt
+  :tabnew path/to/file.txt
+  ```
+  
+  ### netrw
+
 - https://github.com/prichrd/netrw.nvim
 
 ```sh
@@ -78,27 +90,33 @@ let g:netrw_winsize = 25
 "   autocmd VimEnter * :Vexplore
 " augroup END
 ```
+
 ### nerdtree
+
 - https://github.com/preservim/nerdtree.git
 
-### fzf 
+### fzf
 
 - https://github.com/junegunn/fzf.vim
 
 - https://github.com/junegunn/fzf
+
 - install
 
 ```sh
 sudo apt install fzf
 ```
+
 - usage
-```sh
-fzf
-find * -type f | fzf
+  
+  ```sh
+  fzf
+  find * -type f | fzf
+  ```
 
 fzf --preview 'cat {}'
-```
 
+```
 ```sh
 " Look for files under current directory
 :FZF
@@ -114,6 +132,7 @@ fzf --preview 'cat {}'
 
 :Files  [PATH]
 ```
+
 - config
 
 ```sh
@@ -121,6 +140,7 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 
 export FZF_DEFAULT_COMMAND="fd --exclude={.git,.idea,.sass-cache,node_modules,build} --type f"
 ```
+
 - FZF_DEFAULT_OPTS
 
 ```sh
@@ -131,19 +151,22 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O 
 
 - https://github.com/nvim-neo-tree/neo-tree.nvim
 
-###  nvim-tree
+### nvim-tree
+
 - https://github.com/nvim-tree/nvim-tree.lua
 
 ## Comment
+
 - https://github.com/numToStr/Comment.nvim
 
-## Switch code  
+## Switch code
 
 - [vim-fswitch](https://github.com/derekwyatt/vim-fswitch)
 
 ## bookmark
 
 ### vim-bookmarks
+
 - https://github.com/MattesGroeger/vim-bookmarks
 
 ### vim-signature
@@ -151,6 +174,7 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O 
 - https://github.com/kshenoy/vim-signature
 
 ### bookmars.nvim
+
 - https://github.com/tomasky/bookmarks.nvim
 
 ## Compile
@@ -195,13 +219,14 @@ Available commands:
 
 ```sh
 sudo apt install autojump
-
 ```
+
 - zsh-autosuggestions
 
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 ```
+
 - zsh-syntax-highlighting
 
 ```sh
@@ -231,7 +256,6 @@ Install-Module git-aliases -AllowColbber
 
 Install-Module posh-git
 Install-Module oh-my-posh
-
 ```
 
 ```sh
@@ -243,7 +267,7 @@ notepad $PROFILE
 ```
 
 - 假设出现`在此系统上禁止运行脚本`的问题，那么需要在shell中执行一下：
-
+  
   ```sh
   Set-ExecutionPolicy remotesigned
   ```
@@ -253,7 +277,6 @@ notepad $PROFILE
 - https://github.com/gpakosz/.tmux
 - https://github.com/pangliang/oh-my-tmux
 - https://github.com/namtzigla/oh-my-tmux/tree/master
-
 
 # References
 
